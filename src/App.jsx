@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import {
   Shield, Camera, Bell, UserCheck, Lock, Car, Zap,
@@ -99,9 +98,8 @@ function Navbar() {
       }}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => scrollTo("hero")} className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-md"
-            style={{ background: "linear-gradient(135deg,#dc2626,#991b1b)" }}>
-            <Shield className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md">
+            <img src="1780415757897.jpg" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
           </div>
           <div className="leading-tight">
             <div className="font-bold text-gray-900 text-base tracking-tight">
@@ -192,7 +190,6 @@ function Hero() {
           </div>
         </div>
         <div className="animate-fadeIn delay-200 relative hidden lg:block">
-          {/* Floating badges */}
           <div className="animate-float absolute -left-8 top-16 z-20 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center">
               <Activity className="w-5 h-5 text-red-500" />
@@ -212,7 +209,6 @@ function Hero() {
               <div className="text-sm font-bold text-gray-900">Swift & Reliable</div>
             </div>
           </div>
-          {/* REAL PHOTO: hero-officers.jpg — officers lined up from PDF page 1 */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "4/3" }}>
             <img src="hero-officers.jpg"
               alt="Big Dee Security Officers" className="w-full h-full object-cover"
@@ -222,7 +218,6 @@ function Hero() {
           <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-full border-2 border-dashed border-red-200 opacity-60" />
         </div>
       </div>
-      {/* Nairobi skyline strip at bottom — Page 16 */}
       <div className="absolute bottom-0 left-0 right-0 h-32 overflow-hidden pointer-events-none">
         <img src="nairobi-cover.jpg" alt="Nairobi skyline"
           className="w-full h-full object-cover object-bottom opacity-20"
@@ -237,7 +232,7 @@ function Hero() {
   );
 }
 
-/* ── ABOUT (Pages 1 & 4) ── */
+/* ── ABOUT ── */
 function About() {
   const points = [
     { icon: Shield, color: "#dc2626", bg: "#fef2f2", label: "Licensed & Compliant", desc: "Fully compliant with Kenyan regulations and committed to zero-tolerance on corruption." },
@@ -250,13 +245,11 @@ function About() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
         <Reveal>
           <div className="relative">
-            {/* REAL PHOTO: director-duncan.jpg — Duncan Ngao portrait */}
             <div className="rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "5/4" }}>
               <img src="director-duncan.jpg"
                 alt="Duncan O. Ngao - Director Big Dee Security" className="w-full h-full object-cover object-top"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
-            {/* REAL PHOTO: vip-vehicle.jpg — VIP escort photo (Page 4) */}
             <div className="absolute -bottom-10 -right-6 w-44 rounded-2xl overflow-hidden shadow-xl border-4 border-white" style={{ aspectRatio: "3/2" }}>
               <img src="vip-vehicle.jpg" alt="VIP Protection Service"
                 className="w-full h-full object-cover"
@@ -305,7 +298,7 @@ function About() {
   );
 }
 
-/* ── DIRECTOR STATEMENT (Page 2) ── */
+/* ── DIRECTOR STATEMENT ── */
 function Director() {
   return (
     <section className="py-24 overflow-hidden" style={{ background: "linear-gradient(135deg,#0f172a,#1e1b4b)" }}>
@@ -324,7 +317,6 @@ function Director() {
         </Reveal>
         <Reveal delay={0.1}>
           <div className="grid lg:grid-cols-3 gap-8 items-start">
-            {/* REAL PHOTO: director-duncan.jpg */}
             <div className="rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "3/4" }}>
               <img src="director-duncan.jpg"
                 alt="Duncan O. Ngao - Director" className="w-full h-full object-cover object-top"
@@ -360,7 +352,7 @@ function Director() {
   );
 }
 
-/* ── VISION & MISSION (Pages 5–7) ── */
+/* ── VISION & MISSION ── */
 function VisionMission() {
   const values = [
     { title: "Safety and Quality", desc: "Safety and quality are the top priorities considered as we render every service to our clients.", icon: Shield, color: "#dc2626", bg: "#fef2f2" },
@@ -420,7 +412,6 @@ function VisionMission() {
           </Reveal>
         </div>
 
-        {/* Mission Statement Banner — REAL PHOTO: mission-team.jpg (Page 7) */}
         <Reveal delay={0.12}>
           <div className="mb-16 rounded-3xl overflow-hidden relative shadow-xl" style={{ minHeight: "220px" }}>
             <img src="mission-team.jpg"
@@ -438,7 +429,6 @@ function VisionMission() {
           </div>
         </Reveal>
 
-        {/* Why Us inline teaser */}
         <Reveal delay={0.14}>
           <div className="mb-16 grid md:grid-cols-3 gap-6 p-8 rounded-3xl" style={{ background: "linear-gradient(135deg,#0f172a,#1e1b4b)" }}>
             <div className="md:col-span-3 mb-4">
@@ -484,7 +474,7 @@ function VisionMission() {
   );
 }
 
-/* ── SERVICES (Pages 8–13) ── */
+/* ── SERVICES ── */
 const services = [
   {
     icon: Shield,
@@ -555,7 +545,6 @@ function Services() {
           </div>
         </Reveal>
 
-        {/* Service sector tags — Page 8 */}
         <Reveal delay={0.05}>
           <div className="flex flex-wrap gap-2 justify-center mb-12">
             {["Residential & Estates","Oil & Gas","Events","Corporate","Commercial & Industrial","Health & Education","Ports & Airports","Banking & Finance","Diplomatic","Access Control","Executive Protection","Retail Security & Door Supervision"].map((tag,i) => (
@@ -569,10 +558,8 @@ function Services() {
           </div>
         </Reveal>
 
-        {/* Armed Services highlight — Page 9 */}
         <Reveal delay={0.06}>
           <div className="mb-10 rounded-3xl overflow-hidden relative shadow-2xl" style={{ minHeight: "280px" }}>
-            {/* REAL PHOTO: armed-officer.jpg */}
             <img src="armed-officer.jpg" alt="Armed Security Officer Nairobi"
               className="w-full h-full object-cover absolute inset-0" style={{ height: "100%" }}
               onError={e => { e.target.style.background="#0f172a"; }} />
@@ -601,7 +588,6 @@ function Services() {
           </div>
         </Reveal>
 
-        {/* Service cards grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((s, i) => (
             <Reveal key={i} delay={i * 0.07}>
@@ -612,7 +598,6 @@ function Services() {
                   <span className="absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full text-white z-10"
                     style={{ background: s.color }}>{s.tag}</span>
                 )}
-                {/* Service photo thumbnail */}
                 <div className="h-40 overflow-hidden">
                   <img src={s.photo} alt={s.title}
                     className="w-full h-full object-cover transition-transform duration-500"
@@ -647,10 +632,8 @@ function Services() {
           ))}
         </div>
 
-        {/* Supervision truck CTA — Page 13 */}
         <Reveal delay={0.2}>
           <div className="rounded-3xl overflow-hidden relative shadow-xl" style={{ height: "280px" }}>
-            {/* REAL PHOTO: supervision-truck.jpg */}
             <img src="supervision-truck.jpg"
               alt="Big Dee Security patrol vehicle" className="w-full h-full object-cover"
               onError={e => { e.target.style.background="#0f172a"; }} />
@@ -691,7 +674,6 @@ function WhyUs() {
   return (
     <section id="why-us" className="py-28 relative overflow-hidden">
       <div className="absolute inset-0">
-        {/* REAL PHOTO: supervision-truck.jpg as background */}
         <img src="supervision-truck.jpg"
           alt="Security background" className="w-full h-full object-cover"
           onError={e => { e.target.style.background="#0f172a"; }} />
@@ -730,7 +712,6 @@ function WhyUs() {
           ))}
         </div>
 
-        {/* Personnel highlight — Page 15 */}
         <Reveal delay={0.2}>
           <div className="mt-12 rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center"
             style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)" }}>
@@ -745,7 +726,6 @@ function WhyUs() {
                 Our personnel have and will continue to acquire the professional knowledge and skills required to perform their tasks and will implement them while striving continuously to perfect their personal and collective achievements.
               </p>
             </div>
-            {/* REAL PHOTO: officers-squad.jpg */}
             <div className="rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "4/3" }}>
               <img src="officers-squad.jpg"
                 alt="Big Dee Security team" className="w-full h-full object-cover"
@@ -790,7 +770,7 @@ function Stats() {
   );
 }
 
-/* ── CLIENTS (Page 11 & 14) ── */
+/* ── CLIENTS ── */
 function Clients() {
   const clientList = [
     "Small, Medium & Large Businesses","Office and Professional Suites","Retail Shops, Cafes and Restaurants",
@@ -860,16 +840,13 @@ function Clients() {
           </div>
         </Reveal>
 
-        {/* Two-photo row — Page 11 officers + Page 14 hi-vis officer */}
         <Reveal delay={0.12}>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
-            {/* REAL PHOTO: officers-squad.jpg */}
             <div className="rounded-3xl overflow-hidden shadow-lg" style={{ height: "220px" }}>
               <img src="officers-squad.jpg" alt="Big Dee Security squad"
                 className="w-full h-full object-cover"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
-            {/* REAL PHOTO: clients-officer.jpg */}
             <div className="rounded-3xl overflow-hidden shadow-lg" style={{ height: "220px" }}>
               <img src="clients-officer.jpg" alt="Big Dee Security officer on duty"
                 className="w-full h-full object-cover"
@@ -880,7 +857,6 @@ function Clients() {
 
         <Reveal delay={0.15}>
           <div className="rounded-3xl overflow-hidden relative shadow-xl" style={{ height: "200px" }}>
-            {/* REAL PHOTO: hero-officers.jpg */}
             <img src="hero-officers.jpg"
               alt="Big Dee Security team" className="w-full h-full object-cover"
               onError={e => { e.target.style.background="#0f172a"; }} />
@@ -899,7 +875,7 @@ function Clients() {
   );
 }
 
-/* ── CONTACT (Page 12 & 15) ── */
+/* ── CONTACT ── */
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
   const [sent, setSent] = useState(false);
@@ -975,7 +951,6 @@ function Contact() {
             </div>
           </Reveal>
           <Reveal delay={0.15} className="lg:col-span-2 space-y-5">
-            {/* REAL PHOTO: contact-officer.jpg — officer thinking (Page 15) */}
             <div className="rounded-3xl overflow-hidden shadow-lg" style={{ height: "200px" }}>
               <img src="contact-officer.jpg"
                 alt="Big Dee Security officer" className="w-full h-full object-cover"
@@ -1018,7 +993,6 @@ function Footer() {
   };
   return (
     <footer style={{ background: "#0f172a" }}>
-      {/* Nairobi skyline strip — Page 16 */}
       <div className="relative h-40 overflow-hidden">
         <img src="nairobi-cover.jpg" alt="Nairobi skyline"
           className="w-full h-full object-cover object-top opacity-30"
@@ -1027,9 +1001,8 @@ function Footer() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2.5 mb-1">
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg,#dc2626,#991b1b)" }}>
-                <Shield className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md">
+                <img src="1780415757897.jpg" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
               </div>
               <div className="text-white font-bold text-xl">Big Dee <span style={{ color: "#fca5a5" }}>Security</span> Solutions</div>
             </div>
