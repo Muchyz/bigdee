@@ -1256,6 +1256,27 @@ function Footer() {
   );
 }
 
+
+/* ── SCROLL TO TOP ── */
+function ScrollToTopButton() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const h = () => setVisible(window.scrollY > 400);
+    window.addEventListener('scroll', h);
+    return () => window.removeEventListener('scroll', h);
+  }, []);
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      className="fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300"
+      style={{ background: 'linear-gradient(135deg,#dc2626,#1e3a8a)' }}>
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" style={{width:'20px',height:'20px'}}>
+        <path d="M18 15l-6-6-6 6" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </button>
+  );
+}
+
 /* ── WHATSAPP FLOAT ── */
 function WhatsApp() {
   const [label, setLabel] = useState(false);
@@ -1312,6 +1333,7 @@ export default function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
       <Footer />
+      <ScrollToTopButton />
       <WhatsApp />
     </>
   );
