@@ -311,7 +311,7 @@ function About() {
               Protecting Kenya<br />with <span style={{ color: "#dc2626" }}>Purpose</span>
             </h2>
             <p className="text-gray-500 leading-relaxed mb-4">
-              BIG DEE Security Solutions Limited is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.
+              BIG DEE security solutions limited is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.
             </p>
             <p className="text-gray-500 leading-relaxed mb-4">
               Driven by our vision, mission and values — our commitment to uphold compliance and zero-tolerance approach on corruption signals how we operate: ethically and responsibly. We partner with international companies to equip our clients with the best solutions available.
@@ -376,21 +376,21 @@ function Director() {
                 </svg>
               </div>
               <p className="text-white text-xl leading-relaxed font-medium">
-                "I founded BIG DEE Security Solutions Limited to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
+                "I founded BIG DEE security solutions limited to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
               </p>
               <p className="text-white/70 leading-relaxed">
                 In our Company, we will never compromise on the quality of our service as we keep on innovation and to bring the best one can hope for. That is why we decided to partner with international companies: to equip our clients with the best solutions available. This is also why we are investing significantly to develop the talents of our employees continuously.
               </p>
               <p className="text-white/70 leading-relaxed">
-                Developing a business responsibly is challenging in a country like Kenya. Fortunately, at BIG DEE Security Solutions Limited, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.
+                Developing a business responsibly is challenging in a country like Kenya. Fortunately, at BIG DEE security solutions limited, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.
               </p>
               <p className="text-white/70 leading-relaxed">
-                BIG DEE Security Solutions Limited. We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.
+                BIG DEE security solutions limited. We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.
               </p>
               <div className="pt-4 border-t border-white/10 flex items-center justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-white font-bold text-lg">Duncan O. Ngao</div>
-                  <div className="text-red-400 text-sm font-medium">Founder & Director, BIG DEE Security Solutions Limited</div>
+                  <div className="text-red-400 text-sm font-medium">Founder & Director, BIG DEE security solutions limited</div>
                 </div>
                 <button onClick={() => navigate("/director")}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white border border-white/20 hover:bg-white/10 transition-all">
@@ -1244,7 +1244,7 @@ function Footer() {
           ))}
         </div>
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-sm">© {new Date().getFullYear()} BIG DEE Security Solutions Limited. All rights reserved.</p>
+          <p className="text-gray-600 text-sm">© {new Date().getFullYear()} BIG DEE security solutions limited. All rights reserved.</p>
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-gray-500 text-xs">All systems operational</span>

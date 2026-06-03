@@ -31,7 +31,7 @@ const faqs = [
     category: "General",
     items: [
       { q: "What areas does BIG DEE Security serve?", a: "BIG DEE Security currently serves clients across Kenya, with primary operations centred in Nairobi and its surrounds. Our vision is to expand into targeted East Africa markets in the near future." },
-      { q: "Is BIG DEE Security a licensed company?", a: "Yes. BIG DEE Security Solutions Limited is fully licensed and compliant with all Kenyan regulatory requirements governing security service providers. Our management team holds Security Consultant and Security Installer licenses, and all personnel carry valid National Police Clearance certificates." },
+      { q: "Is BIG DEE Security a licensed company?", a: "Yes. BIG DEE security solutions limited is fully licensed and compliant with all Kenyan regulatory requirements governing security service providers. Our management team holds Security Consultant and Security Installer licenses, and all personnel carry valid National Police Clearance certificates." },
       { q: "What makes Big Dee different from other security firms?", a: "We are an independent firm offering unbiased, objective advice tailored to your needs and budget. Our General Manager has over 35 years of industry experience. We conduct full risk assessments before deployment, implement above-average training standards, and maintain a 24/7 control room. We partner with international companies to deliver globally benchmarked solutions." },
     ]
   },
@@ -70,7 +70,7 @@ export default function FAQPage() {
             Questions
           </span>
         </h1>
-        <p className="text-white/60 max-w-xl mx-auto">Everything you need to know about BIG DEE Security Solutions Limited and our services.</p>
+        <p className="text-white/60 max-w-xl mx-auto">Everything you need to know about BIG DEE security solutions limited and our services.</p>
       </div>
 
       {/* FAQs */}

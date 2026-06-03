@@ -44,7 +44,7 @@ export default function DirectorPage() {
               Our Founder
             </span>
           </h1>
-          <p className="text-white/50 max-w-xl mx-auto">Duncan O. Ngao — Founder & Director, BIG DEE Security Solutions Limited</p>
+          <p className="text-white/50 max-w-xl mx-auto">Duncan O. Ngao — Founder & Director, BIG DEE security solutions limited</p>
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export default function DirectorPage() {
                 <div className="p-5 rounded-2xl text-center" style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }}>
                   <div className="text-white font-bold text-lg">Duncan O. Ngao</div>
                   <div className="text-red-400 text-sm font-medium mt-1">Founder & Director</div>
-                  <div className="text-white/40 text-xs mt-1">BIG DEE Security Solutions Limited</div>
+                  <div className="text-white/40 text-xs mt-1">BIG DEE security solutions limited</div>
                   <div className="flex items-center justify-center gap-2 mt-3 p-3 rounded-xl" style={{ background: "rgba(255,255,255,0.06)" }}>
                     <Award className="w-4 h-4 text-amber-400" />
                     <span className="text-white/70 text-xs font-medium">35+ Years Industry Experience</span>
@@ -80,13 +80,13 @@ export default function DirectorPage() {
                 </div>
 
                 <blockquote className="text-white text-2xl leading-relaxed font-medium" style={{ fontFamily: "'DM Serif Display',serif" }}>
-                  "I founded BIG DEE Security Solutions Limited to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
+                  "I founded BIG DEE security solutions limited to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
                 </blockquote>
 
                 <div className="space-y-4 text-white/70 leading-relaxed">
                   <p>In our Company, we will never compromise on the quality of our service as we keep on innovation and to bring the best one can hope for. That is why we decided to partner with international companies: to equip our clients with the best solutions available. This is also why we are investing significantly to develop the talents of our employees continuously.</p>
-                  <p>Developing a business responsibly is challenging in a country like Kenya. Fortunately, at BIG DEE Security Solutions Limited, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.</p>
-                  <p className="text-white/70 leading-relaxed">BIG DEE Security Solutions Limited. We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.</p>
+                  <p>Developing a business responsibly is challenging in a country like Kenya. Fortunately, at BIG DEE security solutions limited, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.</p>
+                  <p className="text-white/70 leading-relaxed">BIG DEE security solutions limited. We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.</p>
                   <p></p>
                 </div>
 
@@ -126,7 +126,7 @@ export default function DirectorPage() {
               Guided by Vision, Mission & Values
             </h2>
             <p className="text-gray-500 mb-8">
-              At BIG DEE Security Solutions Limited, every decision — from hiring to service delivery — is guided by our founder's commitment to excellence and ethical conduct.
+              At BIG DEE security solutions limited, every decision — from hiring to service delivery — is guided by our founder's commitment to excellence and ethical conduct.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <button onClick={() => navigate("/about")}

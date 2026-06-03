@@ -91,7 +91,7 @@ export default function AboutPage() {
                 Kenya's Most <span style={{ color: "#dc2626" }}>Trusted</span> Security Partner
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed mb-8">
-                <p>BIG DEE Security Solutions Limited is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.</p>
+                <p>BIG DEE security solutions limited is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.</p>
                 <p>Driven by our vision, mission and values — our commitment to uphold compliance and zero-tolerance approach on corruption signals how we operate: ethically and responsibly. We partner with international companies to equip our clients with the best solutions available.</p>
                 <p>Our Management is complemented by reputable managers with years of experience in the security industry. Our General Manager boasts of over <span className="font-semibold text-gray-700">35 years experience</span> in the industry, with a foot in training and membership in the industry's Professional Association.</p>
                 <p>We will never compromise on the quality of our service as we keep on innovating to bring the best one can hope for. This is also why we invest significantly in the continuous development of our employees.</p>

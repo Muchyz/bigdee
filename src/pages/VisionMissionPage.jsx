@@ -40,7 +40,7 @@ export default function VisionMissionPage() {
               & Values
             </span>
           </h1>
-          <p className="text-white/60 max-w-xl mx-auto">The principles that drive every decision, every deployment, every interaction at BIG DEE Security Solutions Limited.</p>
+          <p className="text-white/60 max-w-xl mx-auto">The principles that drive every decision, every deployment, every interaction at BIG DEE security solutions limited.</p>
         </div>
       </div>
 

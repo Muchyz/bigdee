@@ -43,7 +43,7 @@ export default function PrivacyPage() {
           <Reveal>
             <div className="flex items-center gap-3 mb-8 p-5 rounded-2xl bg-red-50 border border-red-100">
               <Shield className="w-8 h-8 text-red-600 shrink-0" />
-              <p className="text-red-700 text-sm font-medium">BIG DEE Security Solutions Limited is committed to protecting your privacy and handling your personal information responsibly and transparently.</p>
+              <p className="text-red-700 text-sm font-medium">BIG DEE security solutions limited is committed to protecting your privacy and handling your personal information responsibly and transparently.</p>
             </div>
           </Reveal>
 
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
             },
             {
               title: "7. Contact Us About Privacy",
-              content: "If you have any questions about this Privacy Policy or our handling of your personal information, please contact us at: info@bigdeesecurity.co.ke or write to BIG DEE Security Solutions Limited, P.O. Box 1793-00100, Nairobi, Kenya."
+              content: "If you have any questions about this Privacy Policy or our handling of your personal information, please contact us at: info@bigdeesecurity.co.ke or write to BIG DEE security solutions limited, P.O. Box 1793-00100, Nairobi, Kenya."
             },
             {
               title: "8. Changes to This Policy",
