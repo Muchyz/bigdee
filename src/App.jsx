@@ -203,7 +203,7 @@ function Hero() {
           </div>
           <div className="animate-fadeUp delay-400 flex flex-wrap items-center gap-6 mt-10">
             {[
-              { val: "20+", label: "Clients Served" },
+              { val: "200+", label: "Clients Served" },
               { val: "24/7", label: "Control Room" },
               { val: "100%", label: "Commitment" },
             ].map((s) => (
@@ -480,7 +480,7 @@ function VisionMission() {
         <Reveal delay={0.14}>
           <div className="mb-16 grid md:grid-cols-3 gap-6 p-8 rounded-3xl" style={{ background: "linear-gradient(135deg,#0f172a,#1e1b4b)" }}>
             <div className="md:col-span-3 mb-4">
-              <h3 className="text-xl font-bold text-white">Why Choose Big Dee?</h3>
+              <h3 className="text-xl font-bold text-white">Why Choose BIG DEE?</h3>
               <p className="text-white/50 text-sm mt-1">Since inception, BIG DEE Security has delivered a wide range of security services. Our security packages are designed to cater for clients with respect to their specific needs and financial capabilities.</p>
             </div>
             {[
@@ -882,7 +882,7 @@ function Team() {
 /* ── STATS ── */
 function Stats() {
   const stats = [
-    { val: 20, suffix: "+", label: "Clients Served", icon: Shield, color: "#dc2626", bg: "#fef2f2" },
+    { val: 200, suffix: "+", label: "Clients Served", icon: Shield, color: "#dc2626", bg: "#fef2f2" },
     { val: 15, suffix: "+", label: "Security Officers", icon: Users, color: "#1e3a8a", bg: "#eff6ff" },
     { val: 7, suffix: "/7", label: "Days Control Room", icon: Eye, color: "#15803d", bg: "#f0fdf4" },
     { val: 100, suffix: "%", label: "Client Commitment", icon: BarChart3, color: "#b45309", bg: "#fffbeb" },
