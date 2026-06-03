@@ -615,9 +615,9 @@ function Services() {
         </Reveal>
 
         <Reveal delay={0.05}>
-          <div className="flex flex-wrap gap-2 justify-center mb-12">
-            {["Residential & Estates","Oil & Gas","Events","Corporate","Commercial & Industrial","Health & Education","Ports & Airports","Banking & Finance","Diplomatic","Access Control","Executive Protection","Retail Security & Door Supervision"].map((tag,i) => (
-              <span key={i} className="px-3 py-1.5 rounded-full text-xs font-semibold border"
+          <div className="grid grid-cols-2 gap-2 mb-12">
+            {["Residential & Estates","Corporate","Commercial & Industrial","Oil & Gas","Banking & Finance","Health & Education","Government Agencies","Ports & Airports","Diplomatic","Events","Executive Protection","Access Control","CCTV & Surveillance","Electric Fencing","Alarm Systems","Retail Security","Door Supervision","Fingerprint & Biometrics"].map((tag,i) => (
+              <span key={i} className="px-2 py-1 rounded-full text-xs font-semibold border text-center leading-tight"
                 style={{ background: i % 3 === 0 ? "#fef2f2" : i % 3 === 1 ? "#eff6ff" : "#f0fdf4",
                   color: i % 3 === 0 ? "#dc2626" : i % 3 === 1 ? "#1e3a8a" : "#15803d",
                   borderColor: i % 3 === 0 ? "#fecaca" : i % 3 === 1 ? "#bfdbfe" : "#bbf7d0" }}>
