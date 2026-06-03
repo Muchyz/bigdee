@@ -917,7 +917,7 @@ function Team() {
 function Stats() {
   const stats = [
     { val: 200, suffix: "+", label: "Clients Served", icon: Shield, color: "#dc2626", bg: "#fef2f2" },
-    { val: 15, suffix: "+", label: "Security Officers", icon: Users, color: "#1e3a8a", bg: "#eff6ff" },
+    { val: 300, suffix: "+", label: "Security Officers", icon: Users, color: "#1e3a8a", bg: "#eff6ff" },
     { val: 7, suffix: "/7", label: "Days Control Room", icon: Eye, color: "#15803d", bg: "#f0fdf4" },
     { val: 100, suffix: "%", label: "Client Commitment", icon: BarChart3, color: "#b45309", bg: "#fffbeb" },
   ];
