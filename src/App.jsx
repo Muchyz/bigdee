@@ -348,10 +348,10 @@ function About() {
 function Director() {
   const navigate = useNavigate();
   return (
-    <section className="py-24 overflow-hidden" style={{ background: "linear-gradient(135deg,#0f172a,#1e1b4b)" }}>
+    <section className="py-12 overflow-hidden" style={{ background: "linear-gradient(135deg,#991b1b,#7f1d1d)" }}>
       <div className="max-w-5xl mx-auto px-6">
         <Reveal>
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 border border-white/20">
               Director Statement
             </span>
