@@ -92,14 +92,22 @@ export default function ClientsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-16">
             {industries.map((item, i) => (
               <Reveal key={i} delay={i * 0.04}>
-                <div className="p-6 rounded-2xl border border-gray-100 bg-white hover:shadow-lg transition-all duration-300 group text-center cursor-default"
+                <div className="rounded-2xl border border-gray-100 bg-white hover:shadow-lg transition-all duration-300 group cursor-default overflow-hidden"
                   onMouseEnter={e => e.currentTarget.style.borderColor = item.color + "40"}
                   onMouseLeave={e => e.currentTarget.style.borderColor = "#f1f5f9"}>
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform" style={{ background: item.bg }}>
-                    <item.icon className="w-7 h-7" style={{ color: item.color }} />
+                  <div className="relative h-36 overflow-hidden">
+                    <img src={`/${item.photo}`} alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      onError={e => { e.target.parentElement.style.background = item.bg; e.target.style.display="none"; }} />
+                    <div className="absolute inset-0" style={{background:"linear-gradient(to top,rgba(0,0,0,0.55),transparent)"}} />
+                    <div className="absolute bottom-3 left-3 w-9 h-9 rounded-xl flex items-center justify-center" style={{background: item.color}}>
+                      <item.icon className="w-4 h-4 text-white" />
+                    </div>
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-sm">{item.title}</h3>
-                  <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+                  <div className="p-4">
+                    <h3 className="font-bold text-gray-900 mb-1 text-sm">{item.title}</h3>
+                    <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+                  </div>
                 </div>
               </Reveal>
             ))}
