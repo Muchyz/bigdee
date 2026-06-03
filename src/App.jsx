@@ -25,11 +25,11 @@ import PrivacyPage from "./pages/PrivacyPage";
 
 const FontStyle = () => (
   <style>{`
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Dancing+Script:wght@600&display=swap');
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: #ffffff; color: #0f172a; overflow-x: hidden; }
-    h1,h2,h3 { font-family: 'DM Serif Display', serif; }
+    body { font-family: 'Barlow', sans-serif; font-weight: 500; background: #ffffff; color: #0f172a; overflow-x: hidden; }
+    h1,h2,h3 { font-family: 'Oswald', sans-serif; letter-spacing: 0.02em; font-weight: 700; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes float { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
