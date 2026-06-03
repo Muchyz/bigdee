@@ -31,18 +31,18 @@ function Reveal({ children, className = "", delay = 0 }) {
 }
 
 const industries = [
-  { icon: Building, title: "Corporate", color: "#1e3a8a", bg: "#eff6ff", desc: "From SMEs to large corporations, we secure your office environments and corporate assets." },
-  { icon: Home, title: "Residential & Estates", color: "#15803d", bg: "#f0fdf4", desc: "Protecting homes, gated communities and residential estates across Kenya." },
-  { icon: ShoppingBag, title: "Retail Security", color: "#b45309", bg: "#fffbeb", desc: "Loss prevention, customer safety, and secure retail environments." },
-  { icon: Factory, title: "Commercial & Industrial", color: "#7c3aed", bg: "#f5f3ff", desc: "Heavy-duty security for factories, warehouses and industrial complexes." },
-  { icon: Mic, title: "Events", color: "#0891b2", bg: "#ecfeff", desc: "Professional event security, crowd management and access control." },
-  { icon: Globe, title: "Government", color: "#dc2626", bg: "#fef2f2", desc: "Securing government agencies and public-sector installations." },
-  { icon: Activity, title: "Health & Education", color: "#7c3aed", bg: "#f5f3ff", desc: "Safe environments for hospitals, schools, TAFEs and universities." },
-  { icon: Radio, title: "Ports & Airports", color: "#0891b2", bg: "#ecfeff", desc: "High-security solutions for transport and logistics hubs." },
-  { icon: Shield, title: "Diplomatic", color: "#dc2626", bg: "#fef2f2", desc: "Discreet, reliable security for diplomatic missions and personnel." },
-  { icon: Car, title: "Oil & Gas", color: "#b45309", bg: "#fffbeb", desc: "Specialist security for energy infrastructure and remote sites." },
-  { icon: Lock, title: "Banking & Finance", color: "#1e3a8a", bg: "#eff6ff", desc: "Protecting financial institutions, ATMs and high-value assets." },
-  { icon: Star, title: "VIP & Executive", color: "#15803d", bg: "#f0fdf4", desc: "Exclusive close protection for executives and high-profile individuals." },
+  { icon: Building, title: "Corporate", color: "#1e3a8a", bg: "#eff6ff", photo: "sector-corporate.jpg", desc: "From SMEs to large corporations, we secure your office environments and corporate assets." },
+  { icon: Home, title: "Residential & Estates", color: "#15803d", bg: "#f0fdf4", photo: "sector-residential.jpg", desc: "Protecting homes, gated communities and residential estates across Kenya." },
+  { icon: ShoppingBag, title: "Retail Security", color: "#b45309", bg: "#fffbeb", photo: "sector-retail.jpg", desc: "Loss prevention, customer safety, and secure retail environments." },
+  { icon: Factory, title: "Commercial & Industrial", color: "#7c3aed", bg: "#f5f3ff", photo: "sector-industrial.jpg", desc: "Heavy-duty security for factories, warehouses and industrial complexes." },
+  { icon: Mic, title: "Events", color: "#0891b2", bg: "#ecfeff", photo: "sector-events.jpg", desc: "Professional event security, crowd management and access control." },
+  { icon: Globe, title: "Government", color: "#dc2626", bg: "#fef2f2", photo: "sector-government.jpg", desc: "Securing government agencies and public-sector installations." },
+  { icon: Activity, title: "Health & Education", color: "#7c3aed", bg: "#f5f3ff", photo: "sector-health.jpg", desc: "Safe environments for hospitals, schools, TAFEs and universities." },
+  { icon: Radio, title: "Ports & Airports", color: "#0891b2", bg: "#ecfeff", photo: "sector-ports.jpg", desc: "High-security solutions for transport and logistics hubs." },
+  { icon: Shield, title: "Diplomatic", color: "#dc2626", bg: "#fef2f2", photo: "sector-diplomatic.jpg", desc: "Discreet, reliable security for diplomatic missions and personnel." },
+  { icon: Car, title: "Oil & Gas", color: "#b45309", bg: "#fffbeb", photo: "sector-oilgas.jpg", desc: "Specialist security for energy infrastructure and remote sites." },
+  { icon: Lock, title: "Banking & Finance", color: "#1e3a8a", bg: "#eff6ff", photo: "sector-banking.jpg", desc: "Protecting financial institutions, ATMs and high-value assets." },
+  { icon: Star, title: "VIP & Executive", color: "#15803d", bg: "#f0fdf4", photo: "sector-vip.jpg", desc: "Exclusive close protection for executives and high-profile individuals." },
 ];
 
 const clientList = [
