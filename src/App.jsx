@@ -130,13 +130,13 @@ function Navbar() {
       }}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => { navigate("/"); setTimeout(() => scrollTo("hero"), 100); }} className="flex items-center gap-2.5 group">
-          <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md">
-            <img src="/1780415757897.jpg" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
+          <div className="w-14 h-14 rounded-xl overflow-hidden shadow-md">
+            <img src="/logo.png" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
           </div>
           <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
             <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
             <div style={{ whiteSpace: "nowrap", fontSize: "8.5px", letterSpacing: "2.8px", marginTop: "2px" }}>
-              <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#0f172a", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#f59e0b", letterSpacing: "2px" }}> ★★★★★</span>
+              <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#0f172a", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#dc2626", fontSize: "10px", letterSpacing: "2px", verticalAlign: "sub" }}> .....</span>
             </div>
           </div>
         </button>
@@ -1201,13 +1201,13 @@ function Footer() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2.5 mb-1">
-              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md">
-                <img src="/1780415757897.jpg" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
+              <div className="w-14 h-14 rounded-xl overflow-hidden shadow-md">
+                <img src="/logo.png" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
               </div>
               <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
                 <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
                 <div style={{ whiteSpace: "nowrap", fontSize: "8.5px", letterSpacing: "2.8px", marginTop: "2px" }}>
-                  <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#ffffff", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#f59e0b", letterSpacing: "2px" }}> ★★★★★</span>
+                  <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#ffffff", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#dc2626", fontSize: "10px", letterSpacing: "2px", verticalAlign: "sub" }}> .....</span>
                 </div>
               </div>
             </div>
