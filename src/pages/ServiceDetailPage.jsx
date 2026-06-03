@@ -82,6 +82,47 @@ export default function ServiceDetailPage() {
                 About This Service
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-8">{service.longDesc || service.desc}</p>
+
+              {service.subSystems && (
+                <div className="mt-16 space-y-14">
+                  <h3 className="text-2xl font-bold text-gray-900 border-l-4 pl-4" style={{borderColor:"#dc2626"}}>
+                    What We Offer
+                  </h3>
+                  {service.subSystems.map((sys, i) => (
+                    <div key={i} className="rounded-3xl overflow-hidden border border-gray-100 shadow-md">
+                      <div className="flex items-center gap-4 px-8 py-5" style={{background: sys.color}}>
+                        <span className="text-white/40 text-4xl font-black leading-none">{sys.number}</span>
+                        <h4 className="text-white text-xl font-bold">{sys.title}</h4>
+                      </div>
+                      <div className="p-8 bg-white">
+                        <p className="text-gray-500 mb-6">{sys.desc}</p>
+                        <div className="grid md:grid-cols-2 gap-8 items-start">
+                          <div>
+                            <p className="text-sm font-bold mb-3" style={{color: sys.color}}>What to expect</p>
+                            <ul className="space-y-2">
+                              {sys.bullets.map((b, j) => (
+                                <li key={j} className="flex items-start gap-2 text-sm text-gray-700">
+                                  <span className="mt-1.5 w-2 h-2 rounded-full shrink-0" style={{background: sys.color}} />
+                                  {b}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div className={`grid gap-3 ${sys.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
+                            {sys.photos.map((photo, k) => (
+                              <div key={k} className="rounded-2xl overflow-hidden shadow-md" style={{aspectRatio:"4/3"}}>
+                                <img src={`/${photo}`} alt={sys.title}
+                                  className="w-full h-full object-cover"
+                                  onError={e => { e.target.parentElement.style.background="#e2e8f0"; e.target.style.display="none"; }} />
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </Reveal>
 
             <Reveal delay={0.1}>

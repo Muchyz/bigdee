@@ -552,7 +552,41 @@ export const services = [
     color: "#7c3aed", bg: "#f5f3ff", gradient: "linear-gradient(135deg,#f5f3ff,#ede9fe)",
     bullets: ["Panic & alarm systems","Fingerprint readers & CCTV","Intercoms & surveillance cameras","Electric fencing"],
     photo: "security-systems.jpg",
-    longDesc: "BIG DEE Security incorporates monitoring solutions designed to fit any and all of your security needs. Our monitoring packages bring you peace of mind knowing that your property is protected by a state-of-the-art system installed by trained certified technicians. We also manage an in-house technical department which allows us to deal with technical issues promptly and efficiently. Through our skills and experience, we can analyse your property and provide improvements to your existing system. Systems we supply and install include: Panic systems, Alarm systems, Fingerprint readers, CCTV, Intercoms, Surveillance cameras, and Electric fencing."
+    longDesc: "BIG DEE Security incorporates monitoring solutions designed to fit any and all of your security needs. Our monitoring packages bring you peace of mind knowing that your property is protected by a state-of-the-art system installed by trained certified technicians. We also manage an in-house technical department which allows us to deal with technical issues promptly and efficiently. Through our skills and experience, we can analyse your property and provide improvements to your existing system. Systems we supply and install include: Panic systems, Alarm systems, Fingerprint readers, CCTV, Intercoms, Surveillance cameras, and Electric fencing.",
+    subSystems: [
+      {
+        number: "01",
+        title: "CCTV Installation & Maintenance",
+        desc: "We provide end-to-end surveillance solutions that enhance monitoring and incident response.",
+        color: "#7c3aed",
+        bullets: ["Supply and installation of high-quality CCTV systems","24/7 surveillance capability","Integration with control rooms","Regular maintenance and system support"],
+        photos: ["cctv-install.jpg","cctv-monitor.jpg"]
+      },
+      {
+        number: "02",
+        title: "Electric Fence Installation & Maintenance",
+        desc: "We secure perimeters with reliable electric fencing systems that act as a strong deterrent to intrusions.",
+        color: "#dc2626",
+        bullets: ["Professional installation of electric fences","Routine inspection and maintenance","Enhanced perimeter protection","Reduced dependency on manual guarding"],
+        photos: ["electric-fence.jpg"]
+      },
+      {
+        number: "03",
+        title: "Fingerprint & Biometric Readers",
+        desc: "Advanced biometric access control systems ensuring only authorised personnel gain entry to your premises.",
+        color: "#1e3a8a",
+        bullets: ["Supply and installation of fingerprint readers","Multi-user enrollment and management","Integration with existing access control","Tamper alerts and audit trails"],
+        photos: ["fingerprint-reader.jpg"]
+      },
+      {
+        number: "04",
+        title: "Intercom Systems",
+        desc: "Professional intercom solutions for seamless communication and visitor management at all entry points.",
+        color: "#15803d",
+        bullets: ["Video and audio intercom systems","Gate and door release integration","Multi-apartment & office configurations","Remote access via smartphone"],
+        photos: ["intercom-system.jpg"]
+      },
+    ]
   },
   {
     icon: UserCheck,
