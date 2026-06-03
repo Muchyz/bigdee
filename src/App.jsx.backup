@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Routes, Route, useNavigate, Link, useLocation } from "react-router-dom";
+import { Routes, Route, useNavigate, Link } from "react-router-dom";
 import {
   Shield, Camera, Bell, UserCheck, Lock, Car, Zap,
   Users, Globe, Award, ChevronRight, ArrowRight,
@@ -88,12 +88,6 @@ function Reveal({ children, className = "", delay = 0 }) {
       {children}
     </div>
   );
-}
-
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
 }
 
 const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -1296,7 +1290,6 @@ export default function App() {
     <>
       <FontStyle />
       <Navbar />
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
