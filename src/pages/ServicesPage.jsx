@@ -52,8 +52,8 @@ export default function ServicesPage() {
       {/* Industry Tags */}
       <section className="py-10 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {["Residential & Estates","Oil & Gas","Events","Corporate","Commercial & Industrial","Health & Education","Ports & Airports","Banking & Finance","Diplomatic","Access Control","Executive Protection","Retail Security & Door Supervision"].map((tag, i) => (
+          <div className="grid grid-cols-2 gap-2">
+            {["Residential & Estates","Corporate","Commercial & Industrial","Oil & Gas","Banking & Finance","Health & Education","Government Agencies","Ports & Airports","Diplomatic","Events","Executive Protection","Access Control","CCTV & Surveillance","Electric Fencing","Alarm Systems","Retail Security","Door Supervision","Fingerprint & Biometrics"].map((tag, i) => (
               <span key={i} className="px-3 py-1.5 rounded-full text-xs font-semibold border"
                 style={{
                   background: i % 3 === 0 ? "#fef2f2" : i % 3 === 1 ? "#eff6ff" : "#f0fdf4",

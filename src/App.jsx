@@ -385,7 +385,7 @@ function Director() {
                 Developing a business responsibly is challenging in a country like Kenya. Fortunately, at Big Dee Security Solutions, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.
               </p>
               <p className="text-white/70 leading-relaxed">
-                Our team is serving over 20 customers that distribute our services across Kenya despite current hard situations. We aimed to provide our employee with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.
+                We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.
               </p>
               <div className="pt-4 border-t border-white/10 flex items-center justify-between flex-wrap gap-4">
                 <div>
