@@ -6,7 +6,7 @@ import {
   Building, Home, ShoppingBag, Factory, Mic,
   CheckCircle, TrendingUp, Eye, Cpu, BarChart3,
   Play, ChevronDown, Send, Quote,
-  Activity, Layers, Radio, Star, Target
+  Activity, Layers, Radio, Star, Target, BadgeCheck, FileCheck, BookOpen
 } from "lucide-react";
 
 const FontStyle = () => (
@@ -101,11 +101,11 @@ function Navbar() {
           <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md">
             <img src="1780415757897.jpg" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
           </div>
-          <div className="leading-tight">
-            <div className="font-bold text-gray-900 text-base tracking-tight">
-              Big Dee <span style={{ color: "#dc2626" }}>Security</span>
+          <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
+            <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
+            <div style={{ whiteSpace: "nowrap", fontSize: "8.5px", letterSpacing: "2.8px", marginTop: "2px" }}>
+              <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#0f172a", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#f59e0b", letterSpacing: "2px" }}> ★★★★★</span>
             </div>
-            <div className="text-gray-400 text-xs tracking-widest uppercase">Solutions</div>
           </div>
         </button>
         <div className="hidden lg:flex items-center gap-8">
@@ -140,7 +140,8 @@ function Navbar() {
   );
 }
 
-/* ── HERO (Page 1) ── */
+/* ── HERO ── */
+
 function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20"
@@ -257,6 +258,16 @@ function About() {
             </div>
             <div className="absolute -top-5 -left-5 w-20 h-20 rounded-2xl opacity-15"
               style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }} />
+            {/* NEW: GM experience badge */}
+            <div className="absolute top-4 left-4 z-10 bg-white rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center">
+                <Award className="w-4 h-4 text-red-600" />
+              </div>
+              <div>
+                <div className="text-xs font-bold text-gray-900">35+ Years</div>
+                <div className="text-xs text-gray-400">GM Experience</div>
+              </div>
+            </div>
           </div>
         </Reveal>
         <Reveal delay={0.15}>
@@ -270,8 +281,12 @@ function About() {
             <p className="text-gray-500 leading-relaxed mb-4">
               Big Dee Security Solutions is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-8">
+            <p className="text-gray-500 leading-relaxed mb-4">
               Driven by our vision, mission and values — our commitment to uphold compliance and zero-tolerance approach on corruption signals how we operate: ethically and responsibly. We partner with international companies to equip our clients with the best solutions available.
+            </p>
+            {/* NEW: GM note from brochure */}
+            <p className="text-gray-500 leading-relaxed mb-8">
+              Our Management is complimented by reputable managers with years of experience in the security industry. Our General Manager boasts of over <span className="font-semibold text-gray-700">35 years experience</span> in the industry, with a foot in training and membership in the industry's Professional Association.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               {points.map((p, i) => (
@@ -401,6 +416,8 @@ function VisionMission() {
                   "To stay up to date with innovation and tech around the security industry",
                   "To be the market leaders",
                   "To continually invest in employees growth",
+                  "To maintain superior services that add value but remain affordable",
+                  "To ensure operational areas are safe and secure for day to day activities",
                 ].map((m, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-blue-700 shrink-0 mt-0.5" />
@@ -738,6 +755,87 @@ function WhyUs() {
   );
 }
 
+/* ── NEW: OUR TEAM & CREDENTIALS ── */
+function Team() {
+  const credentials = [
+    { icon: BadgeCheck, color: "#dc2626", bg: "#fef2f2", title: "National Police Clearance", desc: "All our personnel hold valid National Police Clearance certificates, ensuring you engage only vetted, trustworthy officers." },
+    { icon: FileCheck, color: "#1e3a8a", bg: "#eff6ff", title: "Security Consultant License", desc: "Our management team is fully licensed as Security Consultants, qualified to design and advise on comprehensive security solutions." },
+    { icon: Shield, color: "#7c3aed", bg: "#f5f3ff", title: "Security Installers License", desc: "Certified Security Installers on staff ensure that all electronic security systems are installed to industry-standard specifications." },
+    { icon: BookOpen, color: "#15803d", bg: "#f0fdf4", title: "Additional Licenses — CFE", desc: "Our team holds additional specialised licenses including CFE (Certified Fraud Examiner), reflecting our commitment to professional excellence." },
+  ];
+  return (
+    <section id="our-team" className="py-28 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+        <Reveal>
+          <div className="text-center mb-16">
+            <span className="inline-block bg-red-50 text-red-700 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4">
+              Our Team
+            </span>
+            <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">
+              Certified, Vetted &amp;<br />
+              <span style={{ color: "#dc2626" }}>Professionally Trained</span>
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto">
+              Our team is made up of professionals who have undergone standard and rigorous vetting processes. Every member of our force holds the qualifications required to deliver trusted, professional security services.
+            </p>
+          </div>
+        </Reveal>
+
+        {/* Credentials grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {credentials.map((c, i) => (
+            <Reveal key={i} delay={i * 0.07}>
+              <div className="p-7 rounded-3xl border border-gray-100 bg-white card-hover text-center group">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform" style={{ background: c.bg }}>
+                  <c.icon className="w-7 h-7" style={{ color: c.color }} />
+                </div>
+                <h4 className="font-bold text-gray-900 text-sm mb-2">{c.title}</h4>
+                <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        {/* Team narrative banner */}
+        <Reveal delay={0.15}>
+          <div className="rounded-3xl overflow-hidden relative shadow-2xl" style={{ minHeight: "260px" }}>
+            <img src="officers-squad.jpg" alt="Big Dee Security team lineup"
+              className="w-full h-full object-cover absolute inset-0" style={{ height: "100%" }}
+              onError={e => { e.target.style.background="#0f172a"; }} />
+            <div className="relative z-10 grid md:grid-cols-2 gap-0"
+              style={{ background: "linear-gradient(90deg,rgba(15,23,42,0.92) 0%,rgba(30,58,138,0.75) 100%)" }}>
+              <div className="p-10 md:p-14">
+                <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-5 border border-white/20">
+                  Management Edge
+                </span>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ fontFamily: "'DM Serif Display',serif" }}>
+                  35+ Years of Industry Leadership
+                </h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Our General Manager brings over 35 years of experience in the security industry, serving both as a practitioner and as a trainer and member of the industry's Professional Association. This depth of knowledge filters down through every rank of our organisation.
+                </p>
+              </div>
+              <div className="p-10 md:p-14 flex flex-col justify-center gap-4">
+                {[
+                  "Reputable managers with decades of field experience",
+                  "Active trainers & members of the Professional Association",
+                  "In-depth perspective of Kenyan security trends & conditions",
+                  "Knowledge continuously passed on to all personnel",
+                ].map((b, i) => (
+                  <div key={i} className="flex items-center gap-3 bg-white/10 rounded-xl px-4 py-3">
+                    <CheckCircle className="w-4 h-4 text-white shrink-0" />
+                    <span className="text-white/90 text-sm">{b}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 /* ── STATS ── */
 function Stats() {
   const stats = [
@@ -886,98 +984,137 @@ function Contact() {
     setForm({ name: "", email: "", phone: "", service: "", message: "" });
   };
   return (
-    <section id="contact" className="py-28 overflow-hidden"
-      style={{ background: "linear-gradient(160deg,#fef2f2,#fafafa,#eff6ff)" }}>
-      <div className="max-w-7xl mx-auto px-6">
-        <Reveal>
-          <div className="text-center mb-16">
-            <span className="inline-block bg-red-50 text-red-700 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4">
+    <section id="contact" className="overflow-hidden">
+      <div className="relative h-64 md:h-80">
+        <img src="contact-officer.jpg" alt="Contact Big Dee Security"
+          className="w-full h-full object-cover object-top"
+          onError={e => { e.target.style.background="#0f172a"; }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg,rgba(220,38,38,0.88),rgba(30,58,138,0.82))" }} />
+        <div className="absolute inset-0 flex items-center">
+          <div className="max-w-7xl mx-auto px-6 w-full">
+            <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 border border-white/20">
               Contact Us
             </span>
-            <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl text-white mb-3" style={{ fontFamily: "'DM Serif Display',serif" }}>
               Let's Build Your<br />
-              <span style={{ color: "#dc2626" }}>Security Plan</span>
+              <span style={{ background: "linear-gradient(135deg,#fca5a5,#bfdbfe)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                Security Plan
+              </span>
             </h2>
-            <p className="text-gray-500 max-w-md mx-auto">
-              Get a free site assessment and custom quote. Our team responds within 2 hours.
-            </p>
+            <p className="text-white/70 text-sm max-w-md">Free site assessment and custom quote. Our team responds within 2 hours.</p>
           </div>
-        </Reveal>
-        <div className="grid lg:grid-cols-5 gap-8 items-start">
-          <Reveal className="lg:col-span-3">
-            <div className="bg-white rounded-3xl shadow-xl p-8 md:p-10 border border-gray-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Request a Free Assessment</h3>
-              {sent && (
-                <div className="mb-5 flex items-center gap-3 p-4 rounded-2xl bg-emerald-50 border border-emerald-100 text-emerald-700 text-sm font-medium">
-                  <CheckCircle className="w-5 h-5 shrink-0" />
-                  Thank you! We'll reach out within 2 hours.
+        </div>
+      </div>
+      <div className="py-16" style={{ background: "linear-gradient(160deg,#fef2f2,#fafafa,#eff6ff)" }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-5 gap-8 items-start">
+            <Reveal className="lg:col-span-3">
+              <div className="bg-white rounded-3xl shadow-xl p-8 md:p-10 border border-gray-100">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
+                    <Send className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Request a Free Assessment</h3>
+                    <p className="text-xs text-gray-400 mt-0.5">We respond within 2 hours</p>
+                  </div>
                 </div>
-              )}
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
-                  {[
-                    { key: "name", label: "Full Name", type: "text", placeholder: "Your full name", span: true },
-                    { key: "email", label: "Email", type: "email", placeholder: "you@example.com" },
-                    { key: "phone", label: "Phone", type: "tel", placeholder: "+254 7XX XXX XXX" },
-                  ].map((f) => (
-                    <div key={f.key} className={f.span ? "md:col-span-2" : ""}>
-                      <label className="block text-xs font-semibold text-gray-600 mb-1.5 uppercase tracking-wide">{f.label}</label>
-                      <input type={f.type} placeholder={f.placeholder} value={form[f.key]}
-                        onChange={e => setForm({ ...form, [f.key]: e.target.value })} required
+                {sent && (
+                  <div className="mb-5 flex items-center gap-3 p-4 rounded-2xl bg-emerald-50 border border-emerald-100 text-emerald-700 text-sm font-medium">
+                    <CheckCircle className="w-5 h-5 shrink-0" />
+                    Thank you! We'll reach out within 2 hours.
+                  </div>
+                )}
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="md:col-span-2">
+                      <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase tracking-wider">Full Name *</label>
+                      <input type="text" placeholder="Your full name" value={form.name}
+                        onChange={e => setForm({ ...form, name: e.target.value })} required
                         className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-800 placeholder-gray-300 bg-gray-50 transition-all" />
                     </div>
-                  ))}
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-gray-600 mb-1.5 uppercase tracking-wide">Service Required</label>
-                  <select value={form.service} onChange={e => setForm({ ...form, service: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-700 bg-gray-50 transition-all">
-                    <option value="">Select a service…</option>
-                    {services.map(s => <option key={s.title} value={s.title}>{s.title}</option>)}
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-gray-600 mb-1.5 uppercase tracking-wide">Message</label>
-                  <textarea rows={4} placeholder="Tell us about your security requirements…"
-                    value={form.message} onChange={e => setForm({ ...form, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-800 placeholder-gray-300 bg-gray-50 resize-none transition-all" />
-                </div>
-                <button type="submit"
-                  className="w-full py-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 shadow-lg hover:-translate-y-0.5 transition-all"
-                  style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
-                  Send Message <Send className="w-4 h-4" />
-                </button>
-              </form>
-            </div>
-          </Reveal>
-          <Reveal delay={0.15} className="lg:col-span-2 space-y-5">
-            <div className="rounded-3xl overflow-hidden shadow-lg" style={{ height: "200px" }}>
-              <img src="contact-officer.jpg"
-                alt="Big Dee Security officer" className="w-full h-full object-cover"
-                onError={e => { e.target.style.background="#e2e8f0"; }} />
-            </div>
-            {[
-              { icon: Phone, color: "#dc2626", bg: "#fef2f2", label: "Call Us", lines: ["+254 725 336 860", "+254 783 672 424"] },
-              { icon: Mail, color: "#1e3a8a", bg: "#eff6ff", label: "Email Us", lines: ["bigdeesecsolutions@gmail.com", "info@bigdeesecurity.co.ke"] },
-              { icon: MapPin, color: "#15803d", bg: "#f0fdf4", label: "Our Office", lines: ["P.O. Box 1793-00100", "Nairobi, Kenya"] },
-              { icon: Globe, color: "#7c3aed", bg: "#f5f3ff", label: "Website", lines: ["www.bigdeesecurity.co.ke"] },
-            ].map((c, i) => (
-              <div key={i} className="bg-white rounded-2xl p-5 flex items-start gap-4 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: c.bg }}>
-                  <c.icon className="w-5 h-5" style={{ color: c.color }} />
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-gray-400 tracking-widest uppercase mb-1">{c.label}</div>
-                  {c.lines.map(l => <div key={l} className="text-sm text-gray-700 font-medium">{l}</div>)}
-                </div>
+                    <div>
+                      <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase tracking-wider">Email *</label>
+                      <input type="email" placeholder="you@example.com" value={form.email}
+                        onChange={e => setForm({ ...form, email: e.target.value })} required
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-800 placeholder-gray-300 bg-gray-50 transition-all" />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase tracking-wider">Phone</label>
+                      <input type="tel" placeholder="+254 7XX XXX XXX" value={form.phone}
+                        onChange={e => setForm({ ...form, phone: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-800 placeholder-gray-300 bg-gray-50 transition-all" />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase tracking-wider">Service Required</label>
+                    <select value={form.service} onChange={e => setForm({ ...form, service: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-700 bg-gray-50 transition-all">
+                      <option value="">Select a service...</option>
+                      {services.map(s => <option key={s.title} value={s.title}>{s.title}</option>)}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-bold text-gray-500 mb-1.5 uppercase tracking-wider">Message</label>
+                    <textarea rows={4} placeholder="Tell us about your security requirements..."
+                      value={form.message} onChange={e => setForm({ ...form, message: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-800 placeholder-gray-300 bg-gray-50 resize-none transition-all" />
+                  </div>
+                  <button type="submit"
+                    className="w-full py-4 rounded-xl font-bold text-white flex items-center justify-center gap-2 shadow-lg hover:-translate-y-0.5 transition-all"
+                    style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
+                    Send Message <Send className="w-4 h-4" />
+                  </button>
+                </form>
               </div>
-            ))}
-            <div className="rounded-2xl p-5 text-white" style={{ background: "linear-gradient(135deg,#dc2626,#991b1b)" }}>
-              <div className="text-xs font-bold tracking-widest uppercase mb-1 opacity-70">Emergency Line</div>
-              <div className="text-2xl font-bold">0725 336 860</div>
-              <div className="text-white/60 text-xs mt-0.5">Available 24 hours, 7 days a week</div>
-            </div>
-          </Reveal>
+            </Reveal>
+            <Reveal delay={0.15} className="lg:col-span-2 space-y-4">
+              <div className="rounded-3xl overflow-hidden shadow-xl" style={{ height: "180px" }}>
+                <img src="officers-squad.jpg" alt="Big Dee Security officers"
+                  className="w-full h-full object-cover object-top"
+                  onError={e => { e.target.style.background="#e2e8f0"; }} />
+              </div>
+              <div className="rounded-3xl p-6 space-y-3" style={{ background: "linear-gradient(160deg,#0f172a,#1e1b4b)" }}>
+                <h4 className="text-white font-bold text-sm tracking-wide mb-3">Get In Touch</h4>
+                {[
+                  { icon: Phone, color: "#dc2626", bg: "#fef2f2", label: "Call Us", lines: [{text: "+254 725 336 860", href: "tel:+254725336860"}, {text: "+254 783 672 424", href: "tel:+254783672424"}] },
+                  { icon: Mail, color: "#1e3a8a", bg: "#eff6ff", label: "Email Us", lines: [{text: "bigdeesecsolutions@gmail.com", href: "mailto:bigdeesecsolutions@gmail.com"}, {text: "info@bigdeesecurity.co.ke", href: "mailto:info@bigdeesecurity.co.ke"}] },
+                  { icon: MapPin, color: "#15803d", bg: "#f0fdf4", label: "Our Office", lines: [{text: "P.O. Box 1793-00100, Nairobi, Kenya", href: null}] },
+                ].map((c, i) => (
+                  <div key={i} className="flex items-start gap-3 p-3 rounded-xl" style={{ background: "rgba(255,255,255,0.05)" }}>
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ background: c.bg }}>
+                      <c.icon className="w-3.5 h-3.5" style={{ color: c.color }} />
+                    </div>
+                    <div>
+                      <div className="text-white/40 text-xs font-bold tracking-widest uppercase">{c.label}</div>
+                      {c.lines.map(l => l.href ? <a key={l.text} href={l.href} className="text-white/85 text-xs font-medium leading-snug hover:text-white transition-colors block">{l.text}</a> : <div key={l.text} className="text-white/85 text-xs font-medium leading-snug">{l.text}</div>)}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="rounded-3xl p-5 relative overflow-hidden" style={{ background: "linear-gradient(135deg,#dc2626,#991b1b)" }}>
+                <div className="absolute -top-4 -right-4 w-20 h-20 rounded-full opacity-15 bg-white" />
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                  <span className="text-white/70 text-xs font-bold tracking-widest uppercase">Emergency Line</span>
+                </div>
+                <a href="tel:+254725336860" className="text-3xl font-black text-white hover:opacity-80 transition-opacity block">0725 336 860</a>
+                <div className="text-white/60 text-xs mt-0.5">Available 24 hours, 7 days a week</div>
+              </div>
+              <div className="grid grid-cols-3 gap-3">
+                {[
+                  { icon: Zap, label: "2hr Response" },
+                  { icon: Shield, label: "Free Quote" },
+                  { icon: CheckCircle, label: "No Obligation" },
+                ].map((t, i) => (
+                  <div key={i} className="p-3 rounded-2xl text-center bg-white border border-gray-100 shadow-sm">
+                    <t.icon className="w-4 h-4 mx-auto mb-1 text-red-500" />
+                    <div className="text-xs font-semibold text-gray-700">{t.label}</div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
         </div>
       </div>
     </section>
@@ -1004,7 +1141,12 @@ function Footer() {
               <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md">
                 <img src="1780415757897.jpg" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
               </div>
-              <div className="text-white font-bold text-xl">Big Dee <span style={{ color: "#fca5a5" }}>Security</span> Solutions</div>
+              <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
+                <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
+                <div style={{ whiteSpace: "nowrap", fontSize: "8.5px", letterSpacing: "2.8px", marginTop: "2px" }}>
+                  <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#ffffff", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#f59e0b", letterSpacing: "2px" }}> ★★★★★</span>
+                </div>
+              </div>
             </div>
             <div className="text-white/40 text-xs tracking-widest uppercase">Your Security is Our Priority</div>
           </div>
@@ -1018,8 +1160,8 @@ function Footer() {
             </p>
             <div className="text-gray-500 text-xs space-y-1">
               <div>P.O. Box 1793-00100, Nairobi, Kenya</div>
-              <div>+254 725 336 860 | +254 783 672 424</div>
-              <div>info@bigdeesecurity.co.ke</div>
+              <div><a href="tel:+254725336860" className="hover:text-red-400 transition-colors">+254 725 336 860</a> | <a href="tel:+254783672424" className="hover:text-red-400 transition-colors">+254 783 672 424</a></div>
+              <a href="mailto:info@bigdeesecurity.co.ke" className="hover:text-red-400 transition-colors">info@bigdeesecurity.co.ke</a>
             </div>
           </div>
           {Object.entries(links).map(([heading, items]) => (
@@ -1059,7 +1201,9 @@ function WhatsApp() {
       className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
       style={{ background: "linear-gradient(135deg,#25d366,#128c7e)", padding: label ? "10px 18px 10px 14px" : "14px" }}
       onMouseEnter={() => setLabel(true)} onMouseLeave={() => setLabel(false)}>
-      <MessageCircle className="w-5 h-5 text-white shrink-0" />
+      <svg viewBox="0 0 24 24" fill="white" style={{width:"20px",height:"20px",flexShrink:0}}>
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
       {label && <span className="text-white text-sm font-semibold whitespace-nowrap">Chat on WhatsApp</span>}
     </a>
   );
@@ -1077,6 +1221,7 @@ export default function App() {
       <VisionMission />
       <Services />
       <WhyUs />
+      <Team />
       <Stats />
       <Clients />
       <Contact />
