@@ -40,7 +40,7 @@ export default function VisionMissionPage() {
               & Values
             </span>
           </h1>
-          <p className="text-white/60 max-w-xl mx-auto">The principles that drive every decision, every deployment, every interaction at Big Dee Security Solutions.</p>
+          <p className="text-white/60 max-w-xl mx-auto">The principles that drive every decision, every deployment, every interaction at BIG DEE Security Solutions Limited.</p>
         </div>
       </div>
 
@@ -96,7 +96,7 @@ export default function VisionMissionPage() {
               <div className="relative z-10 p-12 md:p-16" style={{ background: "linear-gradient(135deg,rgba(220,38,38,0.90),rgba(30,58,138,0.85))" }}>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-5" style={{ fontFamily: "'DM Serif Display',serif" }}>Mission Statement</h2>
                 <p className="text-white/90 text-xl leading-relaxed mb-4 max-w-3xl">
-                  Big Dee Security is committed to providing exceptional services by delivering personalized, high-quality and cost efficient solutions to meet the needs of our clients.
+                  BIG DEE Security is committed to providing exceptional services by delivering personalized, high-quality and cost efficient solutions to meet the needs of our clients.
                 </p>
                 <p className="text-white/75 leading-relaxed max-w-3xl">
                   We strive to exceed the requests of our clients by going above and beyond what is asked to ensure that every detail is to your requirements.

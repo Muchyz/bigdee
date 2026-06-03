@@ -42,7 +42,7 @@ export default function ContactPage() {
     <div style={{ paddingTop: "80px" }}>
       {/* Hero */}
       <div className="relative overflow-hidden" style={{ minHeight: "300px" }}>
-        <img src="/contact-officer.jpg" alt="Contact Big Dee Security"
+        <img src="/contact-officer.jpg" alt="Contact BIG DEE Security"
           className="absolute inset-0 w-full h-full object-cover object-top"
           onError={e => { e.target.style.background = "#0f172a"; }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg,rgba(220,38,38,0.90),rgba(30,58,138,0.84))" }} />

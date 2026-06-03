@@ -43,7 +43,7 @@ export default function PrivacyPage() {
           <Reveal>
             <div className="flex items-center gap-3 mb-8 p-5 rounded-2xl bg-red-50 border border-red-100">
               <Shield className="w-8 h-8 text-red-600 shrink-0" />
-              <p className="text-red-700 text-sm font-medium">Big Dee Security Solutions is committed to protecting your privacy and handling your personal information responsibly and transparently.</p>
+              <p className="text-red-700 text-sm font-medium">BIG DEE Security Solutions Limited is committed to protecting your privacy and handling your personal information responsibly and transparently.</p>
             </div>
           </Reveal>
 
@@ -62,7 +62,7 @@ export default function PrivacyPage() {
             },
             {
               title: "4. Sharing of Information",
-              content: "Your information may be shared internally with relevant Big Dee Security staff members who need it to provide your service. We may share information with trusted third-party service providers who assist in our operations, subject to confidentiality agreements. We may disclose information if required by law or in response to lawful requests by public authorities."
+              content: "Your information may be shared internally with relevant BIG DEE Security staff members who need it to provide your service. We may share information with trusted third-party service providers who assist in our operations, subject to confidentiality agreements. We may disclose information if required by law or in response to lawful requests by public authorities."
             },
             {
               title: "5. Your Rights",
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
             },
             {
               title: "7. Contact Us About Privacy",
-              content: "If you have any questions about this Privacy Policy or our handling of your personal information, please contact us at: info@bigdeesecurity.co.ke or write to Big Dee Security Solutions, P.O. Box 1793-00100, Nairobi, Kenya."
+              content: "If you have any questions about this Privacy Policy or our handling of your personal information, please contact us at: info@bigdeesecurity.co.ke or write to BIG DEE Security Solutions Limited, P.O. Box 1793-00100, Nairobi, Kenya."
             },
             {
               title: "8. Changes to This Policy",

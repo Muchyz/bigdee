@@ -41,12 +41,12 @@ export default function AboutPage() {
     <div style={{ paddingTop: "80px" }}>
       {/* Hero Banner */}
       <div className="relative overflow-hidden" style={{ minHeight: "320px", background: "linear-gradient(135deg,#0f172a,#1e1b4b)" }}>
-        <img src="/officers-squad.jpg" alt="Big Dee Security Team"
+        <img src="/officers-squad.jpg" alt="BIG DEE Security Team"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
           onError={e => { e.target.style.display = "none"; }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
           <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 border border-white/20">
-            About Big Dee Security
+            About BIG DEE Security
           </span>
           <h1 className="text-5xl md:text-6xl text-white mb-4" style={{ fontFamily: "'DM Serif Display',serif" }}>
             Protecting Kenya<br />
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 Kenya's Most <span style={{ color: "#dc2626" }}>Trusted</span> Security Partner
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed mb-8">
-                <p>Big Dee Security Solutions is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.</p>
+                <p>BIG DEE Security Solutions Limited is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.</p>
                 <p>Driven by our vision, mission and values — our commitment to uphold compliance and zero-tolerance approach on corruption signals how we operate: ethically and responsibly. We partner with international companies to equip our clients with the best solutions available.</p>
                 <p>Our Management is complemented by reputable managers with years of experience in the security industry. Our General Manager boasts of over <span className="font-semibold text-gray-700">35 years experience</span> in the industry, with a foot in training and membership in the industry's Professional Association.</p>
                 <p>We will never compromise on the quality of our service as we keep on innovating to bring the best one can hope for. This is also why we invest significantly in the continuous development of our employees.</p>

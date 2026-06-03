@@ -51,7 +51,7 @@ export default function TeamPage() {
     <div style={{ paddingTop: "80px" }}>
       {/* Hero */}
       <div className="relative overflow-hidden" style={{ minHeight: "340px" }}>
-        <img src="/officers-squad.jpg" alt="Big Dee Security Team"
+        <img src="/officers-squad.jpg" alt="BIG DEE Security Team"
           className="absolute inset-0 w-full h-full object-cover"
           onError={e => { e.target.style.background = "#0f172a"; }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg,rgba(15,23,42,0.92),rgba(30,27,75,0.88))" }} />
@@ -93,7 +93,7 @@ export default function TeamPage() {
           {/* Leadership Banner */}
           <Reveal delay={0.15}>
             <div className="rounded-3xl overflow-hidden relative shadow-2xl mb-16" style={{ minHeight: "280px" }}>
-              <img src="/officers-squad.jpg" alt="Big Dee Security Leadership"
+              <img src="/officers-squad.jpg" alt="BIG DEE Security Leadership"
                 className="absolute inset-0 w-full h-full object-cover"
                 onError={e => { e.target.style.background = "#0f172a"; }} />
               <div className="relative z-10 grid md:grid-cols-2"

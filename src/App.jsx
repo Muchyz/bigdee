@@ -131,7 +131,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => { navigate("/"); setTimeout(() => scrollTo("hero"), 100); }} className="flex items-center gap-2.5 group">
           <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
-            <img src="/logo.png" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
+            <img src="/logo.png" alt="BIG DEE Security Logo" className="w-full h-full object-cover" />
           </div>
           <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
             <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
@@ -196,7 +196,7 @@ function Hero() {
             Solutions
           </h1>
           <p className="animate-fadeUp delay-200 text-lg text-gray-500 leading-relaxed mb-8 max-w-lg">
-            Big Dee Security is dedicated to the provision of excellent security services. We offer a complete range of planning, system analysis, design and executive protection services across Kenya.
+            BIG DEE Security is dedicated to the provision of excellent security services. We offer a complete range of planning, system analysis, design and executive protection services across Kenya.
           </p>
           <div className="animate-fadeUp delay-300 flex flex-wrap gap-4">
             <button onClick={() => navigate("/contact")}
@@ -244,7 +244,7 @@ function Hero() {
           </div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "4/3" }}>
             <img src="/hero-officers.jpg"
-              alt="Big Dee Security Officers" className="w-full h-full object-cover"
+              alt="BIG DEE Security Officers" className="w-full h-full object-cover"
               onError={e => { e.target.style.background="#e2e8f0"; e.target.alt="[hero-officers.jpg]"; }} />
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top right,rgba(220,38,38,0.2),transparent)" }} />
           </div>
@@ -281,7 +281,7 @@ function About() {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "5/4" }}>
               <img src="/director-duncan.jpg"
-                alt="Duncan O. Ngao - Director Big Dee Security" className="w-full h-full object-cover object-top"
+                alt="Duncan O. Ngao - Director BIG DEE Security" className="w-full h-full object-cover object-top"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
             <div className="absolute -bottom-10 -right-6 w-44 rounded-2xl overflow-hidden shadow-xl border-4 border-white" style={{ aspectRatio: "3/2" }}>
@@ -305,13 +305,13 @@ function About() {
         <Reveal delay={0.15}>
           <div>
             <span className="inline-block bg-red-50 text-red-700 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4">
-              About Big Dee Security
+              About BIG DEE Security
             </span>
             <h2 className="text-4xl md:text-5xl text-gray-900 mb-5 leading-tight">
               Protecting Kenya<br />with <span style={{ color: "#dc2626" }}>Purpose</span>
             </h2>
             <p className="text-gray-500 leading-relaxed mb-4">
-              Big Dee Security Solutions is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.
+              BIG DEE Security Solutions Limited is a Kenyan company dedicated to the provision of excellent security services. We are capable of dealing with all your security needs and offer a complete range of planning, system analysis and design as well as executive services.
             </p>
             <p className="text-gray-500 leading-relaxed mb-4">
               Driven by our vision, mission and values — our commitment to uphold compliance and zero-tolerance approach on corruption signals how we operate: ethically and responsibly. We partner with international companies to equip our clients with the best solutions available.
@@ -376,21 +376,21 @@ function Director() {
                 </svg>
               </div>
               <p className="text-white text-xl leading-relaxed font-medium">
-                "I founded Big Dee Security Solutions to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
+                "I founded BIG DEE Security Solutions Limited to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
               </p>
               <p className="text-white/70 leading-relaxed">
                 In our Company, we will never compromise on the quality of our service as we keep on innovation and to bring the best one can hope for. That is why we decided to partner with international companies: to equip our clients with the best solutions available. This is also why we are investing significantly to develop the talents of our employees continuously.
               </p>
               <p className="text-white/70 leading-relaxed">
-                Developing a business responsibly is challenging in a country like Kenya. Fortunately, at Big Dee Security Solutions, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.
+                Developing a business responsibly is challenging in a country like Kenya. Fortunately, at BIG DEE Security Solutions Limited, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.
               </p>
               <p className="text-white/70 leading-relaxed">
-                Big Dee Security Solutions Limited we aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.
+                BIG DEE Security Solutions Limited Limited we aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.
               </p>
               <div className="pt-4 border-t border-white/10 flex items-center justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-white font-bold text-lg">Duncan O. Ngao</div>
-                  <div className="text-red-400 text-sm font-medium">Founder & Director, Big Dee Security Solutions</div>
+                  <div className="text-red-400 text-sm font-medium">Founder & Director, BIG DEE Security Solutions Limited</div>
                 </div>
                 <button onClick={() => navigate("/director")}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white border border-white/20 hover:bg-white/10 transition-all">
@@ -471,12 +471,12 @@ function VisionMission() {
         <Reveal delay={0.12}>
           <div className="mb-16 rounded-3xl overflow-hidden relative shadow-xl" style={{ minHeight: "220px" }}>
             <img src="/mission-team.jpg"
-              alt="Big Dee Security Mission Team" className="w-full h-full object-cover absolute inset-0" style={{ height: "100%" }}
+              alt="BIG DEE Security Mission Team" className="w-full h-full object-cover absolute inset-0" style={{ height: "100%" }}
               onError={e => { e.target.style.background="#1e293b"; }} />
             <div className="relative z-10 p-10 md:p-14" style={{ background: "linear-gradient(135deg,rgba(220,38,38,0.88),rgba(30,58,138,0.82))" }}>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ fontFamily: "'DM Serif Display',serif" }}>Mission Statement</h3>
               <p className="text-white/90 text-lg leading-relaxed mb-3 max-w-3xl">
-                Big Dee Security is committed to providing exceptional services by delivering personalized, high-quality and cost efficient solutions to meet the needs of our clients.
+                BIG DEE Security is committed to providing exceptional services by delivering personalized, high-quality and cost efficient solutions to meet the needs of our clients.
               </p>
               <p className="text-white/75 leading-relaxed max-w-3xl">
                 We strive to exceed the requests of our clients by going above and beyond what is asked to ensure that every detail is to your requirements.
@@ -489,7 +489,7 @@ function VisionMission() {
           <div className="mb-16 grid md:grid-cols-3 gap-6 p-8 rounded-3xl" style={{ background: "linear-gradient(135deg,#0f172a,#1e1b4b)" }}>
             <div className="md:col-span-3 mb-4">
               <h3 className="text-xl font-bold text-white">Why Choose Big Dee?</h3>
-              <p className="text-white/50 text-sm mt-1">Since inception, Big Dee Security has delivered a wide range of security services. Our security packages are designed to cater for clients with respect to their specific needs and financial capabilities.</p>
+              <p className="text-white/50 text-sm mt-1">Since inception, BIG DEE Security has delivered a wide range of security services. Our security packages are designed to cater for clients with respect to their specific needs and financial capabilities.</p>
             </div>
             {[
               { icon: Users, color: "#fca5a5", title: "Independent & Unbiased", desc: "As an independent firm, we offer unbiased, objective and impartial advice. We make recommendations right for your business — at your budget." },
@@ -536,11 +536,11 @@ export const services = [
     icon: Shield,
     title: "Guarding & Protection",
     slug: "guarding-protection",
-    desc: "For several years, Big Dee Security has delivered superior guarding services. We value long-term relationships and take time to understand your needs and environment with a full risk assessment. Officers are uniformed, well equipped, and carry panic buttons linked to our control room.",
+    desc: "For several years, BIG DEE Security has delivered superior guarding services. We value long-term relationships and take time to understand your needs and environment with a full risk assessment. Officers are uniformed, well equipped, and carry panic buttons linked to our control room.",
     color: "#dc2626", bg: "#fef2f2", gradient: "linear-gradient(135deg,#fef2f2,#fee2e2)", tag: "Most Popular",
     bullets: ["Uniformed & well equipped officers","Full risk assessment before deployment","Panic buttons linked to control room","Armed Reaction dispatched instantly"],
     photo: "guarding-dog.jpg",
-    longDesc: "Big Dee Security has delivered superior guarding services for several years. We value long-term relationships with our clients and take the time to develop a strong understanding that results in quality security outcomes. While providing guarding services, we conduct a full risk assessment of your environment to ensure our security officers fit your exact requirements. All officers are duly uniformed and well-equipped. They carry panic buttons linked directly to our 24/7 control room — in the event of any problem, Armed Reaction assistance is dispatched immediately."
+    longDesc: "BIG DEE Security has delivered superior guarding services for several years. We value long-term relationships with our clients and take the time to develop a strong understanding that results in quality security outcomes. While providing guarding services, we conduct a full risk assessment of your environment to ensure our security officers fit your exact requirements. All officers are duly uniformed and well-equipped. They carry panic buttons linked directly to our 24/7 control room — in the event of any problem, Armed Reaction assistance is dispatched immediately."
   },
   {
     icon: Car,
@@ -556,11 +556,11 @@ export const services = [
     icon: Camera,
     title: "Security Systems",
     slug: "security-systems",
-    desc: "Big Dee Security incorporates monitoring solutions designed to fit any and all of your security needs. Our monitoring packages will bring you peace of mind knowing that your property is protected by a state of the art system installed by trained certified technicians.",
+    desc: "BIG DEE Security incorporates monitoring solutions designed to fit any and all of your security needs. Our monitoring packages will bring you peace of mind knowing that your property is protected by a state of the art system installed by trained certified technicians.",
     color: "#7c3aed", bg: "#f5f3ff", gradient: "linear-gradient(135deg,#f5f3ff,#ede9fe)",
     bullets: ["Panic & alarm systems","Fingerprint readers & CCTV","Intercoms & surveillance cameras","Electric fencing"],
     photo: "security-systems.jpg",
-    longDesc: "Big Dee Security incorporates monitoring solutions designed to fit any and all of your security needs. Our monitoring packages bring you peace of mind knowing that your property is protected by a state-of-the-art system installed by trained certified technicians. We also manage an in-house technical department which allows us to deal with technical issues promptly and efficiently. Through our skills and experience, we can analyse your property and provide improvements to your existing system. Systems we supply and install include: Panic systems, Alarm systems, Fingerprint readers, CCTV, Intercoms, Surveillance cameras, and Electric fencing."
+    longDesc: "BIG DEE Security incorporates monitoring solutions designed to fit any and all of your security needs. Our monitoring packages bring you peace of mind knowing that your property is protected by a state-of-the-art system installed by trained certified technicians. We also manage an in-house technical department which allows us to deal with technical issues promptly and efficiently. Through our skills and experience, we can analyse your property and provide improvements to your existing system. Systems we supply and install include: Panic systems, Alarm systems, Fingerprint readers, CCTV, Intercoms, Surveillance cameras, and Electric fencing."
   },
   {
     icon: UserCheck,
@@ -570,7 +570,7 @@ export const services = [
     color: "#15803d", bg: "#f0fdf4", gradient: "linear-gradient(135deg,#f0fdf4,#dcfce7)",
     bullets: ["Protection for VIPs & government personnel","Professionalism under any danger","Fully compliant with instructions","Dedicated to complete assigned tasks"],
     photo: "vip-team.jpg",
-    longDesc: "Big Dee Security offers top-level protection for important clients and government personnel. Our operatives act out of professionalism and total devotion to their principals. They will always go to their assistance when called upon, despite any danger or difficulty. They strive to the best of their ability to fully and successfully complete all that is required of them according to instructions, company regulations, and their spirit of service. Our VIP protection team is specially trained, discreet, and prepared for every scenario."
+    longDesc: "BIG DEE Security offers top-level protection for important clients and government personnel. Our operatives act out of professionalism and total devotion to their principals. They will always go to their assistance when called upon, despite any danger or difficulty. They strive to the best of their ability to fully and successfully complete all that is required of them according to instructions, company regulations, and their spirit of service. Our VIP protection team is specially trained, discreet, and prepared for every scenario."
   },
   {
     icon: Lock,
@@ -580,17 +580,17 @@ export const services = [
     color: "#b45309", bg: "#fffbeb", gradient: "linear-gradient(135deg,#fffbeb,#fef3c7)",
     bullets: ["Biometric & electronic access","Intercoms & keypad systems","Suitable for all facility sizes","In-house technical support team"],
     photo: "security-systems.jpg",
-    longDesc: "Big Dee Security provides comprehensive access control solutions for facilities of all types and sizes — from small offices to large industrial complexes. Our systems include electronic access control, biometric fingerprint readers, keypad systems, intercoms, and full electronic facility management. Our in-house technical department ensures any technical issues are resolved promptly and efficiently, minimising downtime and maintaining security integrity at all times."
+    longDesc: "BIG DEE Security provides comprehensive access control solutions for facilities of all types and sizes — from small offices to large industrial complexes. Our systems include electronic access control, biometric fingerprint readers, keypad systems, intercoms, and full electronic facility management. Our in-house technical department ensures any technical issues are resolved promptly and efficiently, minimising downtime and maintaining security integrity at all times."
   },
   {
     icon: Users,
     title: "Supervision & Management",
     slug: "supervision-management",
-    desc: "To ensure that guards complete their duties accordingly and in accordance with company policy and the clients instructions, Big Dee Security has Area Managers and Supervisors who will constantly check on the guards.",
+    desc: "To ensure that guards complete their duties accordingly and in accordance with company policy and the clients instructions, BIG DEE Security has Area Managers and Supervisors who will constantly check on the guards.",
     color: "#0891b2", bg: "#ecfeff", gradient: "linear-gradient(135deg,#ecfeff,#cffafe)",
     bullets: ["Dedicated Area Managers","Regular supervisor check-ins","Strict adherence to client instructions","Performance accountability"],
     photo: "officers-squad.jpg",
-    longDesc: "To ensure that all guards complete their duties in accordance with company policy and client instructions, Big Dee Security deploys dedicated Area Managers and Supervisors who conduct constant, unannounced checks on deployed personnel. This layer of management ensures accountability, consistent performance, and immediate corrective action whenever required. Our supervision structure means clients can trust that their site is never left to chance — every post is monitored and every officer is held to our high standards."
+    longDesc: "To ensure that all guards complete their duties in accordance with company policy and client instructions, BIG DEE Security deploys dedicated Area Managers and Supervisors who conduct constant, unannounced checks on deployed personnel. This layer of management ensures accountability, consistent performance, and immediate corrective action whenever required. Our supervision structure means clients can trust that their site is never left to chance — every post is monitored and every officer is held to our high standards."
   },
 ];
 
@@ -705,7 +705,7 @@ function Services() {
         <Reveal delay={0.2}>
           <div className="rounded-3xl overflow-hidden relative shadow-xl" style={{ height: "280px" }}>
             <img src="/supervision-truck.jpg"
-              alt="Big Dee Security patrol vehicle" className="w-full h-full object-cover"
+              alt="BIG DEE Security patrol vehicle" className="w-full h-full object-cover"
               onError={e => { e.target.style.background="#0f172a"; }} />
             <div className="absolute inset-0 flex items-center justify-center"
               style={{ background: "linear-gradient(135deg,rgba(220,38,38,0.82),rgba(30,58,138,0.78))" }}>
@@ -762,7 +762,7 @@ function WhyUs() {
               </span>
             </h2>
             <p className="text-white/60 max-w-xl mx-auto">
-              Big Dee Security is committed to providing exceptional services by delivering personalized, high-quality and cost efficient solutions to meet the needs of our clients.
+              BIG DEE Security is committed to providing exceptional services by delivering personalized, high-quality and cost efficient solutions to meet the needs of our clients.
             </p>
           </div>
         </Reveal>
@@ -798,7 +798,7 @@ function WhyUs() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "4/3" }}>
               <img src="/officers-squad.jpg"
-                alt="Big Dee Security team" className="w-full h-full object-cover"
+                alt="BIG DEE Security team" className="w-full h-full object-cover"
                 onError={e => { e.target.style.background="#1e293b"; }} />
             </div>
           </div>
@@ -850,7 +850,7 @@ function Team() {
 
         <Reveal delay={0.15}>
           <div className="rounded-3xl overflow-hidden relative shadow-2xl" style={{ minHeight: "260px" }}>
-            <img src="/officers-squad.jpg" alt="Big Dee Security team lineup"
+            <img src="/officers-squad.jpg" alt="BIG DEE Security team lineup"
               className="w-full h-full object-cover absolute inset-0" style={{ height: "100%" }}
               onError={e => { e.target.style.background="#0f172a"; }} />
             <div className="relative z-10 grid md:grid-cols-2 gap-0"
@@ -993,12 +993,12 @@ function Clients() {
         <Reveal delay={0.12}>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="rounded-3xl overflow-hidden shadow-lg" style={{ height: "220px" }}>
-              <img src="/officers-squad.jpg" alt="Big Dee Security squad"
+              <img src="/officers-squad.jpg" alt="BIG DEE Security squad"
                 className="w-full h-full object-cover"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
             <div className="rounded-3xl overflow-hidden shadow-lg" style={{ height: "220px" }}>
-              <img src="/clients-officer.jpg" alt="Big Dee Security officer on duty"
+              <img src="/clients-officer.jpg" alt="BIG DEE Security officer on duty"
                 className="w-full h-full object-cover"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
@@ -1008,7 +1008,7 @@ function Clients() {
         <Reveal delay={0.15}>
           <div className="rounded-3xl overflow-hidden relative shadow-xl" style={{ height: "200px" }}>
             <img src="/hero-officers.jpg"
-              alt="Big Dee Security team" className="w-full h-full object-cover"
+              alt="BIG DEE Security team" className="w-full h-full object-cover"
               onError={e => { e.target.style.background="#0f172a"; }} />
             <div className="absolute inset-0 flex items-center justify-center"
               style={{ background: "rgba(15,23,42,0.75)" }}>
@@ -1038,7 +1038,7 @@ function Contact() {
   return (
     <section id="contact" className="overflow-hidden">
       <div className="relative h-64 md:h-80">
-        <img src="/contact-officer.jpg" alt="Contact Big Dee Security"
+        <img src="/contact-officer.jpg" alt="Contact BIG DEE Security"
           className="w-full h-full object-cover object-top"
           onError={e => { e.target.style.background="#0f172a"; }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg,rgba(220,38,38,0.88),rgba(30,58,138,0.82))" }} />
@@ -1122,7 +1122,7 @@ function Contact() {
             </Reveal>
             <Reveal delay={0.15} className="lg:col-span-2 space-y-4">
               <div className="rounded-3xl overflow-hidden shadow-xl" style={{ height: "180px" }}>
-                <img src="/officers-squad.jpg" alt="Big Dee Security officers"
+                <img src="/officers-squad.jpg" alt="BIG DEE Security officers"
                   className="w-full h-full object-cover object-top"
                   onError={e => { e.target.style.background="#e2e8f0"; }} />
               </div>
@@ -1202,7 +1202,7 @@ function Footer() {
           <div className="text-center">
             <div className="flex items-center justify-center gap-2.5 mb-1">
               <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
-                <img src="/logo.png" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
+                <img src="/logo.png" alt="BIG DEE Security Logo" className="w-full h-full object-cover" />
               </div>
               <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
                 <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
@@ -1244,7 +1244,7 @@ function Footer() {
           ))}
         </div>
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-sm">© {new Date().getFullYear()} Big Dee Security Solutions. All rights reserved.</p>
+          <p className="text-gray-600 text-sm">© {new Date().getFullYear()} BIG DEE Security Solutions Limited. All rights reserved.</p>
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-gray-500 text-xs">All systems operational</span>

@@ -62,7 +62,7 @@ export default function ClientsPage() {
     <div style={{ paddingTop: "80px" }}>
       {/* Hero */}
       <div className="relative overflow-hidden" style={{ minHeight: "320px" }}>
-        <img src="/hero-officers.jpg" alt="Big Dee Security Clients"
+        <img src="/hero-officers.jpg" alt="BIG DEE Security Clients"
           className="absolute inset-0 w-full h-full object-cover"
           onError={e => { e.target.style.background = "#0f172a"; }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg,rgba(220,38,38,0.88),rgba(30,58,138,0.82))" }} />
