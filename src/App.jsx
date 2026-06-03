@@ -130,7 +130,7 @@ function Navbar() {
       }}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => { navigate("/"); setTimeout(() => scrollTo("hero"), 100); }} className="flex items-center gap-2.5 group">
-          <div className="w-14 h-14 rounded-xl overflow-hidden shadow-md">
+          <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
             <img src="/logo.png" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
           </div>
           <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
@@ -1201,7 +1201,7 @@ function Footer() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2.5 mb-1">
-              <div className="w-14 h-14 rounded-xl overflow-hidden shadow-md">
+              <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
                 <img src="/logo.png" alt="Big Dee Security Logo" className="w-full h-full object-cover" />
               </div>
               <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
