@@ -129,16 +129,8 @@ function Navbar() {
         boxShadow: scrolled ? "0 1px 24px rgba(0,0,0,0.06)" : "none",
       }}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <button onClick={() => { navigate("/"); setTimeout(() => scrollTo("hero"), 100); }} className="flex items-center gap-2.5 group">
-          <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
-            <img src="/logo.png" alt="BIG DEE Security Logo" className="w-full h-full object-cover" />
-          </div>
-          <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
-            <div style={{ whiteSpace: "nowrap", fontSize: "8.5px", letterSpacing: "2.8px", marginTop: "2px" }}>
-              <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#0f172a", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#dc2626", fontSize: "10px", letterSpacing: "2px", verticalAlign: "sub" }}> .....</span>
-            </div>
-          </div>
+        <button onClick={() => { navigate("/"); setTimeout(() => scrollTo("hero"), 100); }}>
+          <img src="/logo.png" alt="BIG DEE Security" style={{ height: "64px", objectFit: "contain" }} />
         </button>
         <div className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
@@ -1202,13 +1194,7 @@ function Footer() {
           <div className="text-center">
             <div className="flex items-center justify-center gap-2.5 mb-1">
               <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
-                <img src="/logo.png" alt="BIG DEE Security Logo" className="w-full h-full object-cover" />
-              </div>
-              <div style={{ lineHeight: "1.2", display: "inline-flex", flexDirection: "column", alignItems: "flex-start" }}>
-                <div className="font-black" style={{ color: "#dc2626", fontSize: "18px", lineHeight: "1", letterSpacing: "0.55em", whiteSpace: "nowrap" }}>BIG DEE</div>
-                <div style={{ whiteSpace: "nowrap", fontSize: "8.5px", letterSpacing: "2.8px", marginTop: "2px" }}>
-                  <span className="font-bold" style={{ color: "#dc2626" }}>SECURITY </span><span style={{ color: "#ffffff", fontWeight: "600" }}>SOLUTIONS</span><span style={{ color: "#dc2626", fontSize: "10px", letterSpacing: "2px", verticalAlign: "sub" }}> .....</span>
-                </div>
+          <img src="/logo.png" alt="BIG DEE Security" style={{ height: "64px", objectFit: "contain" }} />
               </div>
             </div>
             <div className="text-white/40 text-xs tracking-widest uppercase">Your Security is Our Priority</div>

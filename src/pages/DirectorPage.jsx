@@ -86,7 +86,7 @@ export default function DirectorPage() {
                 <div className="space-y-4 text-white/70 leading-relaxed">
                   <p>In our Company, we will never compromise on the quality of our service as we keep on innovation and to bring the best one can hope for. That is why we decided to partner with international companies: to equip our clients with the best solutions available. This is also why we are investing significantly to develop the talents of our employees continuously.</p>
                   <p>Developing a business responsibly is challenging in a country like Kenya. Fortunately, at BIG DEE security solutions limited, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.</p>
-                  <p className="text-white/70 leading-relaxed">BIG DEE security solutions limited. We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.</p>
+                  <p className="text-white/70 leading-relaxed">BIG DEE security solutions limited We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.</p>
                   <p></p>
                 </div>
 
