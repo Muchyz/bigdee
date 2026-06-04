@@ -14,6 +14,7 @@ const photos = [
   { src: "/mission-team.jpg", caption: "Mission Team" },
   { src: "/contact-officer.jpg", caption: "Professional Service" },
   { src: "/clients-officer.jpg", caption: "Client Protection" },
+  { src: "/gallery-briefing.jpg", caption: "Pre-Shift Briefing" },
 ];
 
 export default function GalleryPage() {
