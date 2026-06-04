@@ -272,7 +272,7 @@ function About() {
         <Reveal>
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "5/4" }}>
-              <img src="/director-duncan.jpg"
+              <img src="/about-team.jpg"
                 alt="Duncan O. Ngao - Director BIG DEE Security" className="w-full h-full object-cover object-top"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
