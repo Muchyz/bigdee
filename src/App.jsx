@@ -330,14 +330,13 @@ function About() {
             </p>
             <div className="grid grid-cols-2 gap-4 mb-8">
               {points.map((p, i) => (
-                <div key={i} className="flex items-start gap-3 p-4 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-md transition-all duration-200 border border-transparent hover:border-gray-100">
-                  <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ background: p.bg }}>
-                    <p.icon className="w-4 h-4" style={{ color: p.color }} />
+                <div key={i} className="p-4 rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all duration-200 overflow-hidden border-t-4"
+                  style={{ borderTopColor: p.color }}>
+                  <div className="w-11 h-11 rounded-2xl flex items-center justify-center mb-3" style={{ background: p.bg }}>
+                    <p.icon className="w-5 h-5" style={{ color: p.color }} />
                   </div>
-                  <div>
-                    <div className="text-sm font-semibold text-gray-800 mb-0.5">{p.label}</div>
-                    <div className="text-xs text-gray-500 leading-snug">{p.desc}</div>
-                  </div>
+                  <div className="text-sm font-bold text-gray-800 mb-1">{p.label}</div>
+                  <div className="text-xs text-gray-500 leading-snug">{p.desc}</div>
                 </div>
               ))}
             </div>
