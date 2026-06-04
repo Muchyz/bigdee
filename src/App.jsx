@@ -779,27 +779,33 @@ function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((s, i) => (
             <Reveal key={i} delay={i * 0.07}>
-              <div className="relative rounded-3xl border border-gray-100 cursor-pointer card-hover overflow-hidden"
-                style={{ background: active === i ? s.gradient : "#ffffff", transition: "background 0.3s ease" }}
+              <div className="relative rounded-2xl cursor-pointer overflow-hidden flex flex-col"
+                style={{
+                  background: "#fff",
+                  border: `1.5px solid ${active === i ? s.color + "60" : "#f1f5f9"}`,
+                  boxShadow: active === i ? `0 8px 32px ${s.color}22` : "0 2px 12px rgba(0,0,0,0.06)",
+                  transition: "all 0.3s ease",
+                  borderLeft: `4px solid ${s.color}`,
+                }}
                 onMouseEnter={() => setActive(i)} onMouseLeave={() => setActive(null)}
                 onClick={() => navigate(`/services/${s.slug}`)}>
-                {s.tag && (
-                  <span className="absolute top-4 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full text-white z-10"
-                    style={{ background: s.color }}>{s.tag}</span>
-                )}
-                <div className="h-64 overflow-hidden">
+                <div className="relative overflow-hidden" style={{ height: "200px" }}>
                   <img src={`/${s.photo}`} alt={s.title}
                     className="w-full h-full object-cover object-top transition-transform duration-500"
                     style={{ transform: active === i ? "scale(1.05)" : "scale(1)" }}
                     onError={e => { e.target.parentElement.style.background = s.bg; e.target.style.display="none"; }} />
-
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 60%)" }} />
+                  {s.tag && (
+                    <span className="absolute top-3 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full text-white"
+                      style={{ background: s.color }}>{s.tag}</span>
+                  )}
                 </div>
-                <div className="p-8">
-                  <div className="flex items-center gap-3 mb-4 -mt-7 relative z-10">
-                    <div className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-sm shrink-0" style={{ background: s.bg }}>
-                      <s.icon className="w-6 h-6" style={{ color: s.color }} />
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: s.bg }}>
+                      <s.icon className="w-5 h-5" style={{ color: s.color }} />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 leading-tight">{s.title}</h3>
+                    <h3 className="text-lg font-bold text-gray-900 leading-tight">{s.title}</h3>
                   </div>
                   <p className="text-gray-500 text-sm leading-relaxed mb-4">{s.desc}</p>
                   <ul className="space-y-1.5 mb-5">
@@ -810,13 +816,14 @@ function Services() {
                       </li>
                     ))}
                   </ul>
-                  <div className="flex items-center gap-1 text-sm font-semibold" style={{ color: s.color }}>
-                    Learn more <ChevronRight className="w-4 h-4" />
+                  <div className="mt-auto flex items-center justify-between pt-3 border-t border-gray-100">
+                    <span className="text-xs text-gray-400 font-medium">View Details</span>
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center transition-all"
+                      style={{ background: active === i ? s.color : s.bg }}>
+                      <ChevronRight className="w-4 h-4" style={{ color: active === i ? "#fff" : s.color }} />
+                    </div>
                   </div>
                 </div>
-                {active === i && (
-                  <div className="h-1 w-full" style={{ background: s.color }} />
-                )}
               </div>
             </Reveal>
           ))}
