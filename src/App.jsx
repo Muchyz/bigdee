@@ -1065,7 +1065,7 @@ function Clients() {
                 onMouseLeave={e => e.currentTarget.style.borderColor = "#f1f5f9"}>
                 <div className="relative h-52 overflow-hidden">
                   <img src={`/${item.photo}`} alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     onError={e => { e.target.parentElement.style.background = item.bg; e.target.style.display="none"; }} />
                   <div className="absolute inset-0" style={{background:"linear-gradient(to top,rgba(0,0,0,0.55),transparent)"}} />
                   <div className="absolute bottom-3 left-3 w-9 h-9 rounded-xl flex items-center justify-center" style={{background: item.color}}>
