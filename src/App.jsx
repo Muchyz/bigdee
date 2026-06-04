@@ -275,7 +275,7 @@ function About() {
               <img src="/about-main.jpg"
                 alt="Duncan O. Ngao - Director BIG DEE Security" className="w-full h-full object-cover object-top"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
-              <div className="absolute bottom-4 left-4 z-10 rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2"
+              <div className="absolute top-4 right-4 z-10 rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2"
                 style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
                 <div className="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center">
                   <Award className="w-4 h-4 text-white" />
