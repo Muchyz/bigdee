@@ -268,7 +268,7 @@ function About() {
     { icon: Globe, color: "#b45309", bg: "#fffbeb", label: "East Africa Vision", desc: "Serving Kenya and targeting expansion across East Africa markets." },
   ];
   return (
-    <section id="about" className="py-28 bg-white overflow-hidden">
+    <section id="about" className="pt-28 pb-10 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
         <Reveal>
           <div className="relative">
@@ -347,11 +347,13 @@ function About() {
                 </div>
               ))}
             </div>
-            <button onClick={() => navigate("/contact")}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
-              style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
-              Work With Us <ArrowRight className="w-4 h-4" />
-            </button>
+            <div className="flex justify-center">
+              <button onClick={() => navigate("/contact")}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
+                style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
+                Work With Us <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
           </div>
         </Reveal>
       </div>
