@@ -1090,9 +1090,10 @@ function Clients() {
               <div className="rounded-2xl border border-gray-100 bg-white card-hover cursor-pointer transition-all overflow-hidden group"
                 onMouseEnter={e => e.currentTarget.style.borderColor = item.color + "40"}
                 onMouseLeave={e => e.currentTarget.style.borderColor = "#f1f5f9"}>
-                <div className="relative overflow-hidden" style={{aspectRatio:"4/3"}}>
+                <div className="relative overflow-hidden" style={{aspectRatio:"16/9"}}>
                   <img src={`/${item.photo}`} alt={item.title}
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
+                    style={{background:"#f1f5f9"}}
                     onError={e => { e.target.parentElement.style.background = item.bg; e.target.style.display="none"; }} />
                   <div className="absolute inset-0" style={{background:"linear-gradient(to top,rgba(0,0,0,0.55),transparent)"}} />
                   <div className="absolute bottom-3 left-3 w-9 h-9 rounded-xl flex items-center justify-center" style={{background: item.color}}>
