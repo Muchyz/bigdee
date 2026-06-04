@@ -357,7 +357,8 @@ function About() {
             </div>
             {selected && (
               <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{background:"rgba(0,0,0,0.85)"}} onClick={() => setSelected(null)}>
-                <div className="max-w-lg w-full">
+                <div className="max-w-lg w-full relative" onClick={e => e.stopPropagation()}>
+                  <button onClick={() => setSelected(null)} className="absolute -top-4 -right-4 w-9 h-9 rounded-full bg-white flex items-center justify-center shadow-lg z-10 text-gray-800 font-bold text-lg">&times;</button>
                   <img src={selected.src} alt={selected.caption} className="w-full rounded-2xl shadow-2xl" />
                   <p className="text-white text-center mt-3 font-medium">{selected.caption}</p>
                 </div>
