@@ -475,7 +475,8 @@ function Director() {
               <div className="pt-4 border-t border-white/10 flex items-center justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-white font-bold text-lg">Duncan O. Ngao</div>
-                  <div className="text-red-400 text-sm font-medium">Founder & Director, BIG DEE security solutions limited</div>
+                  <div className="text-red-400 text-sm font-medium">Founder & Director</div>
+                  <div className="text-red-400 text-sm font-medium">BIG DEE security solutions limited</div>
                 </div>
                 <button onClick={() => navigate("/director")}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white border border-white/20 hover:bg-white/10 transition-all">
@@ -1335,10 +1336,8 @@ function Footer() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 0%, #0f172a 100%)" }} />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
-            <div className="flex items-center justify-center gap-2.5 mb-1">
-              <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
-          <img src="/logo.png" alt="BIG DEE Security" style={{ height: "88px", objectFit: "contain" }} />
-              </div>
+            <div className="flex items-center justify-center mb-1">
+              <img src="/logo.png" alt="BIG DEE Security" style={{ height: "72px", objectFit: "contain" }} />
             </div>
             <div className="text-white/40 text-xs tracking-widest uppercase">Your Security is Our Priority</div>
           </div>
