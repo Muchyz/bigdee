@@ -306,6 +306,7 @@ function Hero() {
 /* ── ABOUT ── */
 function About() {
   const navigate = useNavigate();
+  const [selected, setSelected] = useState(null);
   const points = [
     { icon: Shield, color: "#dc2626", bg: "#fef2f2", label: "Licensed & Compliant", desc: "Fully compliant with Kenyan regulations and committed to zero-tolerance on corruption." },
     { icon: Cpu, color: "#1e3a8a", bg: "#eff6ff", label: "Innovation-Driven", desc: "Continuously investing in technology and our people to bring the best solutions." },
@@ -334,26 +335,34 @@ function About() {
             </div>
             <div className="grid grid-cols-2 gap-2 mt-3">
               <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
-                <img src="/about-action.jpg" alt="Security in action"
-                  className="w-full h-full object-cover object-top"
+                <img src="/about-action.jpg" alt="Security in action" onClick={() => setSelected({src:"/about-action.jpg",caption:"Security in action"})}
+                  className="w-full h-full object-cover object-top cursor-pointer"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
-                <img src="/about-gate.jpg" alt="Gate security"
-                  className="w-full h-full object-cover object-center"
+                <img src="/about-gate.jpg" alt="Gate security" onClick={() => setSelected({src:"/about-gate.jpg",caption:"Gate security"})}
+                  className="w-full h-full object-cover object-center cursor-pointer"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
-                <img src="/gallery-vip-new.jpg" alt="Suiting Up for Service"
-                  className="w-full h-full object-cover object-top"
+                <img src="/gallery-vip-new.jpg" alt="Suiting Up for Service" onClick={() => setSelected({src:"/gallery-vip-new.jpg",caption:"Suiting Up for Service"})}
+                  className="w-full h-full object-cover object-top cursor-pointer"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
-                <img src="/gallery-briefing.jpg" alt="Pre-Shift Briefing"
-                  className="w-full h-full object-cover object-top"
+                <img src="/gallery-briefing.jpg" alt="Pre-Shift Briefing" onClick={() => setSelected({src:"/gallery-briefing.jpg",caption:"Pre-Shift Briefing"})}
+                  className="w-full h-full object-cover object-top cursor-pointer"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
               </div>
             </div>
+            {selected && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{background:"rgba(0,0,0,0.85)"}} onClick={() => setSelected(null)}>
+                <div className="max-w-lg w-full">
+                  <img src={selected.src} alt={selected.caption} className="w-full rounded-2xl shadow-2xl" />
+                  <p className="text-white text-center mt-3 font-medium">{selected.caption}</p>
+                </div>
+              </div>
+            )}
             <div className="mt-4 flex justify-center">
               <button onClick={() => navigate("/gallery")}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white shadow-md hover:-translate-y-0.5 transition-all"
