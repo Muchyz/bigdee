@@ -1063,7 +1063,7 @@ function Clients() {
               <div className="rounded-2xl border border-gray-100 bg-white card-hover cursor-pointer transition-all overflow-hidden group"
                 onMouseEnter={e => e.currentTarget.style.borderColor = item.color + "40"}
                 onMouseLeave={e => e.currentTarget.style.borderColor = "#f1f5f9"}>
-                <div className="relative h-36 overflow-hidden">
+                <div className="relative h-52 overflow-hidden">
                   <img src={`/${item.photo}`} alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     onError={e => { e.target.parentElement.style.background = item.bg; e.target.style.display="none"; }} />
