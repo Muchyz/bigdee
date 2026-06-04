@@ -338,12 +338,12 @@ function About() {
                     borderTopColor: p.color,
                     boxShadow: `0 4px 20px 0 ${p.color}20`,
                   }}>
-                  <div className="w-11 h-11 rounded-2xl flex items-center justify-center mb-3"
+                  <div className="w-11 h-11 rounded-2xl flex items-center justify-center mb-3 mx-auto"
                     style={{ background: p.bg }}>
                     <p.icon className="w-5 h-5" style={{ color: p.color }} />
                   </div>
-                  <div className="text-sm font-bold text-gray-800 mb-1">{p.label}</div>
-                  <div className="text-xs text-gray-500 leading-snug">{p.desc}</div>
+                  <div className="text-sm font-bold text-gray-800 mb-1 text-center">{p.label}</div>
+                  <div className="text-xs text-gray-500 leading-snug text-center">{p.desc}</div>
                 </div>
               ))}
             </div>
