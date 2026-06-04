@@ -1240,7 +1240,7 @@ function Footer() {
       { label: "About Us", path: "/about" },
       { label: "Director Statement", path: "/director" },
       { label: "Careers", path: "/careers" },
-      { label: "News", path: "/contact" },
+      { label: "Gallery", path: "/gallery" },
     ],
     "Services": services.map(s => ({ label: s.title, path: `/services/${s.slug}` })),
     "Support": [
