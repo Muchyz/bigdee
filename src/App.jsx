@@ -320,7 +320,8 @@ function About() {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl relative" style={{ aspectRatio: "5/4" }}>
               <img src="/about-main.jpg"
-                alt="Duncan O. Ngao - Director BIG DEE Security" className="w-full h-full object-cover object-top"
+                alt="Duncan O. Ngao - Director BIG DEE Security" className="w-full h-full object-cover object-top cursor-pointer"
+                onClick={() => setSelected({src:"/about-main.jpg",caption:"BIG DEE Security Team"})}
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
               <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10 rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2"
                 style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
