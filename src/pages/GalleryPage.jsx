@@ -5,7 +5,7 @@ const photos = [
   { src: "/about-main.jpg", caption: "BIG DEE Security Team" },
   { src: "/about-action.jpg", caption: "Security Screening" },
   { src: "/about-gate.jpg", caption: "On Duty" },
-  { src: "/officers-squad.jpg", caption: "Officers Squad" },
+  { src: "/gallery-squad-new.jpg", caption: "BIG DEE Security Team" },
   { src: "/hero-officers.jpg", caption: "Security Officers" },
   { src: "/armed-officer.jpg", caption: "Armed Officer" },
   { src: "/director-duncan.jpg", caption: "Director Duncan O. Ngao" },
