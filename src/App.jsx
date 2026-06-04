@@ -272,14 +272,21 @@ function About() {
         <Reveal>
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "5/4" }}>
-              <img src="/about-team.jpg"
+              <img src="/about-main.jpg"
                 alt="Duncan O. Ngao - Director BIG DEE Security" className="w-full h-full object-cover object-top"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
-            <div className="absolute -bottom-10 -right-6 w-44 rounded-2xl overflow-hidden shadow-xl border-4 border-white" style={{ aspectRatio: "3/2" }}>
-              <img src="/vip-vehicle.jpg" alt="VIP Protection Service"
-                className="w-full h-full object-cover"
-                onError={e => { e.target.style.background="#f1f5f9"; }} />
+            <div className="grid grid-cols-2 gap-2 mt-3">
+              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "1/1" }}>
+                <img src="/about-action.jpg" alt="Security in action"
+                  className="w-full h-full object-cover object-top"
+                  onError={e => { e.target.style.background="#f1f5f9"; }} />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "1/1" }}>
+                <img src="/about-gate.jpg" alt="Gate security"
+                  className="w-full h-full object-cover object-center"
+                  onError={e => { e.target.style.background="#f1f5f9"; }} />
+              </div>
             </div>
             <div className="absolute -top-5 -left-5 w-20 h-20 rounded-2xl opacity-15"
               style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }} />
