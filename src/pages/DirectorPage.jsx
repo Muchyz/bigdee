@@ -30,20 +30,7 @@ export default function DirectorPage() {
   const navigate = useNavigate();
   return (
     <div style={{ paddingTop: "80px" }}>
-      {/* Dark hero */}
-      <div className="relative overflow-hidden" style={{ background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
-        <div className="absolute inset-0 opacity-10 pointer-events-none"
-          style={{ backgroundImage: "radial-gradient(circle,#ffffff 1px,transparent 1px)", backgroundSize: "32px 32px" }} />
-        <div className="relative z-10 max-w-5xl mx-auto px-6 py-4 text-center">
-          <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 border border-white/20">
-            Director Statement
-          </span>
-
-        </div>
-      </div>
-
-      {/* Main Statement */}
-      <section className="py-24" style={{ background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
+      <section className="py-16" style={{ background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             <Reveal>
