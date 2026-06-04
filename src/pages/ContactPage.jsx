@@ -82,9 +82,16 @@ export default function ContactPage() {
                 </div>
 
                 {sent && (
-                  <div className="mb-5 flex items-center gap-3 p-4 rounded-2xl bg-emerald-50 border border-emerald-100 text-emerald-700 text-sm font-medium">
-                    <CheckCircle className="w-5 h-5 shrink-0" />
-                    Thank you! We'll reach out within 2 hours.
+                  <div className="mb-5 flex flex-col items-center gap-4 p-8 rounded-2xl text-center" style={{background:"linear-gradient(135deg,#f0fdf4,#dcfce7)",border:"2px solid #86efac"}}>
+                    <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{background:"linear-gradient(135deg,#16a34a,#15803d)"}}>
+                      <CheckCircle className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="text-xl font-bold text-green-800">Message Sent!</div>
+                    <div className="text-green-700 text-sm">Thank you for reaching out. Our team will contact you within 2 hours.</div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                      <span className="text-green-600 text-xs font-semibold">We typically respond faster during business hours</span>
+                    </div>
                   </div>
                 )}
 
