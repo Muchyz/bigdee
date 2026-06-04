@@ -131,7 +131,7 @@ function Navbar() {
       }}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <button onClick={() => { navigate("/"); setTimeout(() => scrollTo("hero"), 100); }}>
-          <img src="/logo.png" alt="BIG DEE Security" style={{ height: "64px", objectFit: "contain" }} />
+          <img src="/logo.png" alt="BIG DEE Security" style={{ height: "88px", objectFit: "contain" }} />
         </button>
         <div className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
@@ -1329,7 +1329,7 @@ function Footer() {
           <div className="text-center">
             <div className="flex items-center justify-center gap-2.5 mb-1">
               <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md">
-          <img src="/logo.png" alt="BIG DEE Security" style={{ height: "64px", objectFit: "contain" }} />
+          <img src="/logo.png" alt="BIG DEE Security" style={{ height: "88px", objectFit: "contain" }} />
               </div>
             </div>
             <div className="text-white/40 text-xs tracking-widest uppercase">Your Security is Our Priority</div>
