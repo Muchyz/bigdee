@@ -95,7 +95,7 @@ export default function ClientsPage() {
                 <div className="rounded-2xl border border-gray-100 bg-white hover:shadow-lg transition-all duration-300 group cursor-default overflow-hidden"
                   onMouseEnter={e => e.currentTarget.style.borderColor = item.color + "40"}
                   onMouseLeave={e => e.currentTarget.style.borderColor = "#f1f5f9"}>
-                  <div className="relative h-36 overflow-hidden">
+                  <div className="relative overflow-hidden" style={{aspectRatio:"16/9"}}>
                     <img src={`/${item.photo}`} alt={item.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       onError={e => { e.target.parentElement.style.background = item.bg; e.target.style.display="none"; }} />
