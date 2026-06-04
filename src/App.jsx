@@ -277,12 +277,12 @@ function About() {
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
             </div>
             <div className="grid grid-cols-2 gap-2 mt-3">
-              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "1/1" }}>
+              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
                 <img src="/about-action.jpg" alt="Security in action"
                   className="w-full h-full object-cover object-top"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "1/1" }}>
+              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
                 <img src="/about-gate.jpg" alt="Gate security"
                   className="w-full h-full object-cover object-center"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
