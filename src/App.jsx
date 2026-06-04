@@ -271,10 +271,20 @@ function About() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
         <Reveal>
           <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl" style={{ aspectRatio: "5/4" }}>
+            <div className="rounded-3xl overflow-hidden shadow-2xl relative" style={{ aspectRatio: "5/4" }}>
               <img src="/about-main.jpg"
                 alt="Duncan O. Ngao - Director BIG DEE Security" className="w-full h-full object-cover object-top"
                 onError={e => { e.target.style.background="#e2e8f0"; }} />
+              <div className="absolute bottom-4 left-4 z-10 rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2"
+                style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
+                <div className="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center">
+                  <Award className="w-4 h-4 text-white" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-white">35+ Years</div>
+                  <div className="text-xs text-white/70">GM Experience</div>
+                </div>
+              </div>
             </div>
             <div className="grid grid-cols-2 gap-2 mt-3">
               <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
@@ -287,6 +297,13 @@ function About() {
                   className="w-full h-full object-cover object-center"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
               </div>
+            </div>
+            <div className="mt-4 flex justify-center">
+              <button onClick={() => navigate("/gallery")}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white shadow-md hover:-translate-y-0.5 transition-all"
+                style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
+                <Camera className="w-4 h-4" /> View Photo Gallery
+              </button>
             </div>
             <div className="absolute -top-5 -left-5 w-20 h-20 rounded-2xl opacity-15"
               style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }} />
