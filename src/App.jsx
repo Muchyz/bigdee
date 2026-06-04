@@ -290,16 +290,7 @@ function About() {
             </div>
             <div className="absolute -top-5 -left-5 w-20 h-20 rounded-2xl opacity-15"
               style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }} />
-            <div className="absolute bottom-4 left-4 z-10 rounded-2xl shadow-lg px-4 py-3 flex items-center gap-2"
-              style={{ background: "linear-gradient(135deg,#dc2626,#1e3a8a)" }}>
-              <div className="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center">
-                <Award className="w-4 h-4 text-white" />
-              </div>
-              <div>
-                <div className="text-xs font-bold text-white">35+ Years</div>
-                <div className="text-xs text-white/70">GM Experience</div>
-              </div>
-            </div>
+
           </div>
         </Reveal>
         <Reveal delay={0.15}>
