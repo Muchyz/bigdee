@@ -9,7 +9,7 @@ const photos = [
   { src: "/hero-officers.jpg", caption: "Security Officers" },
   { src: "/armed-officer.jpg", caption: "Armed Officer" },
   { src: "/director-duncan.jpg", caption: "Director Duncan O. Ngao" },
-  { src: "/vip-team.jpg", caption: "VIP Protection" },
+  { src: "/gallery-vip-new.jpg", caption: "VIP Protection" },
   { src: "/supervision-truck.jpg", caption: "Patrol Vehicle" },
   { src: "/mission-team.jpg", caption: "Mission Team" },
   { src: "/contact-officer.jpg", caption: "Professional Service" },
