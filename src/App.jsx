@@ -784,22 +784,23 @@ function Services() {
                 onMouseEnter={() => setActive(i)} onMouseLeave={() => setActive(null)}
                 onClick={() => navigate(`/services/${s.slug}`)}>
                 {s.tag && (
-                  <span className="absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full text-white z-10"
+                  <span className="absolute top-4 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full text-white z-10"
                     style={{ background: s.color }}>{s.tag}</span>
                 )}
-                <div className="h-40 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img src={`/${s.photo}`} alt={s.title}
-                    className="w-full h-full object-cover transition-transform duration-500"
+                    className="w-full h-full object-cover object-top transition-transform duration-500"
                     style={{ transform: active === i ? "scale(1.05)" : "scale(1)" }}
                     onError={e => { e.target.parentElement.style.background = s.bg; e.target.style.display="none"; }} />
-                  <div className="absolute top-0 left-0 right-0 h-40"
-                    style={{ background: `linear-gradient(to bottom, transparent 50%, ${active === i ? s.gradient.split(",")[1] : "#ffffff"})` }} />
+
                 </div>
                 <div className="p-8">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-sm -mt-7 relative z-10" style={{ background: s.bg }}>
-                    <s.icon className="w-7 h-7" style={{ color: s.color }} />
+                  <div className="flex items-center gap-3 mb-4 -mt-7 relative z-10">
+                    <div className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-sm shrink-0" style={{ background: s.bg }}>
+                      <s.icon className="w-6 h-6" style={{ color: s.color }} />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 leading-tight">{s.title}</h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{s.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed mb-4">{s.desc}</p>
                   <ul className="space-y-1.5 mb-5">
                     {s.bullets.map((b, j) => (
