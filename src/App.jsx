@@ -1161,8 +1161,13 @@ function Clients() {
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
   const [sent, setSent] = useState(false);
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    await fetch("https://formspree.io/f/mlgkdeoo", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
     setSent(true);
     setTimeout(() => setSent(false), 5000);
     setForm({ name: "", email: "", phone: "", service: "", message: "" });
