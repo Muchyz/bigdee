@@ -362,9 +362,7 @@ function About() {
                   <div className="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/10">
                     <img src={selected.src} alt={selected.caption} className="w-full object-contain" style={{maxHeight:"75vh"}} />
                   </div>
-                  <div className="mt-4 text-center">
-                    <span className="inline-block px-5 py-2 rounded-full text-white text-sm font-semibold" style={{background:"linear-gradient(135deg,rgba(220,38,38,0.8),rgba(30,58,138,0.8))",backdropFilter:"blur(8px)"}}>{selected.caption}</span>
-                  </div>
+
                 </div>
               </div>
             )}
