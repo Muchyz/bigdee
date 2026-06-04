@@ -958,21 +958,21 @@ function Clients() {
     "Business Operators with Multiple Sites","Shopping Centers","Local Councils","Medical Suites",
   ];
   const industries = [
-    { icon: Building, title: "Corporate", color: "#1e3a8a", bg: "#eff6ff" },
-    { icon: Home, title: "Residential & Estates", color: "#15803d", bg: "#f0fdf4" },
-    { icon: ShoppingBag, title: "Retail Security", color: "#b45309", bg: "#fffbeb" },
-    { icon: Factory, title: "Commercial & Industrial", color: "#7c3aed", bg: "#f5f3ff" },
-    { icon: Mic, title: "Events", color: "#0891b2", bg: "#ecfeff" },
-    { icon: Globe, title: "Government", color: "#dc2626", bg: "#fef2f2" },
-    { icon: Activity, title: "Health & Education", color: "#7c3aed", bg: "#f5f3ff" },
-    { icon: Radio, title: "Ports & Airports", color: "#0891b2", bg: "#ecfeff" },
-    { icon: Shield, title: "Diplomatic", color: "#dc2626", bg: "#fef2f2" },
-    { icon: Car, title: "Oil & Gas", color: "#b45309", bg: "#fffbeb" },
-    { icon: Lock, title: "Banking & Finance", color: "#1e3a8a", bg: "#eff6ff" },
-    { icon: Star, title: "VIP & Executive", color: "#15803d", bg: "#f0fdf4" },
+    { icon: Building, title: "Corporate", color: "#1e3a8a", bg: "#eff6ff", photo: "sector-corporate.jpg", desc: "From SMEs to large corporations, we secure your office environments and corporate assets." },
+    { icon: Home, title: "Residential & Estates", color: "#15803d", bg: "#f0fdf4", photo: "sector-residential.jpg", desc: "Protecting homes, gated communities and residential estates across Kenya." },
+    { icon: ShoppingBag, title: "Retail Security", color: "#b45309", bg: "#fffbeb", photo: "sector-retail.jpg", desc: "Loss prevention, customer safety, and secure retail environments." },
+    { icon: Factory, title: "Commercial & Industrial", color: "#7c3aed", bg: "#f5f3ff", photo: "sector-industrial.jpg", desc: "Securing factories, warehouses and industrial facilities around the clock." },
+    { icon: Mic, title: "Events", color: "#0891b2", bg: "#ecfeff", photo: "sector-events.jpg", desc: "Crowd management, access control and safety for all event types." },
+    { icon: Globe, title: "Government", color: "#dc2626", bg: "#fef2f2", photo: "sector-government.jpg", desc: "Trusted security for government facilities, agencies and public institutions." },
+    { icon: Activity, title: "Health & Education", color: "#7c3aed", bg: "#f5f3ff", photo: "sector-health.jpg", desc: "Safe environments for hospitals, schools, colleges and universities." },
+    { icon: Radio, title: "Ports & Airports", color: "#0891b2", bg: "#ecfeff", photo: "sector-ports.jpg", desc: "Perimeter security, access control and surveillance for ports and airports." },
+    { icon: Shield, title: "Diplomatic", color: "#dc2626", bg: "#fef2f2", photo: "sector-diplomatic.jpg", desc: "Discreet, professional security for embassies and diplomatic missions." },
+    { icon: Car, title: "Oil & Gas", color: "#b45309", bg: "#fffbeb", photo: "sector-oilgas.jpg", desc: "Protecting critical infrastructure, pipelines and energy facilities." },
+    { icon: Lock, title: "Banking & Finance", color: "#1e3a8a", bg: "#eff6ff", photo: "sector-banking.jpg", desc: "Armed escorts, vault security and protection for financial institutions." },
+    { icon: Star, title: "VIP & Executive", color: "#15803d", bg: "#f0fdf4", photo: "sector-vip.jpg", desc: "Close protection and motorcade security for executives and dignitaries." },
   ];
   return (
-    <section id="clients" className="py-28" style={{ background: "linear-gradient(180deg,#f8fafc,#ffffff)" }}>
+    <section id="clients" className="py-10" style={{ background: "linear-gradient(180deg,#f8fafc,#ffffff)" }}>
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
           <div className="text-center mb-16">
@@ -990,14 +990,22 @@ function Clients() {
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 mb-16">
           {industries.map((item, i) => (
             <Reveal key={i} delay={i * 0.04}>
-              <div className="p-5 rounded-2xl border border-gray-100 bg-white card-hover text-center group cursor-pointer transition-all"
+              <div className="rounded-2xl border border-gray-100 bg-white card-hover cursor-pointer transition-all overflow-hidden group"
                 onMouseEnter={e => e.currentTarget.style.borderColor = item.color + "40"}
                 onMouseLeave={e => e.currentTarget.style.borderColor = "#f1f5f9"}>
-                <div className="w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
-                  style={{ background: item.bg }}>
-                  <item.icon className="w-6 h-6" style={{ color: item.color }} />
+                <div className="relative h-36 overflow-hidden">
+                  <img src={`/${item.photo}`} alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    onError={e => { e.target.parentElement.style.background = item.bg; e.target.style.display="none"; }} />
+                  <div className="absolute inset-0" style={{background:"linear-gradient(to top,rgba(0,0,0,0.55),transparent)"}} />
+                  <div className="absolute bottom-3 left-3 w-9 h-9 rounded-xl flex items-center justify-center" style={{background: item.color}}>
+                    <item.icon className="w-4 h-4 text-white" />
+                  </div>
                 </div>
-                <h4 className="font-semibold text-gray-800 text-sm">{item.title}</h4>
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800 text-sm mb-1">{item.title}</h4>
+                  <p className="text-xs text-gray-500 leading-snug">{item.desc}</p>
+                </div>
               </div>
             </Reveal>
           ))}
