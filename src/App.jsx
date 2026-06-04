@@ -356,7 +356,7 @@ function About() {
               </div>
             </div>
             {selected && (
-              <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{background:"rgba(0,0,0,0.92)",backdropFilter:"blur(8px)"}} onClick={() => setSelected(null)}>
+              <div className="fixed inset-0 flex items-center justify-center p-4" style={{zIndex:9999,background:"rgba(0,0,0,0.92)",backdropFilter:"blur(8px)"}} onClick={() => setSelected(null)}>
                 <div className="w-full max-w-md relative" onClick={e => e.stopPropagation()}>
                   <button onClick={() => setSelected(null)} className="absolute -top-3 -right-3 z-20 w-10 h-10 rounded-full flex items-center justify-center shadow-xl font-bold text-white transition-all hover:scale-110" style={{background:"linear-gradient(135deg,#dc2626,#1e3a8a)"}}>&#x2715;</button>
                   <div className="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/10">
