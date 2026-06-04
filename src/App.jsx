@@ -356,11 +356,15 @@ function About() {
               </div>
             </div>
             {selected && (
-              <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{background:"rgba(0,0,0,0.85)"}} onClick={() => setSelected(null)}>
-                <div className="max-w-lg w-full relative" onClick={e => e.stopPropagation()}>
-                  <button onClick={() => setSelected(null)} className="absolute -top-4 -right-4 w-9 h-9 rounded-full bg-white flex items-center justify-center shadow-lg z-10 text-gray-800 font-bold text-lg">&times;</button>
-                  <img src={selected.src} alt={selected.caption} className="w-full rounded-2xl shadow-2xl" />
-                  <p className="text-white text-center mt-3 font-medium">{selected.caption}</p>
+              <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{background:"rgba(0,0,0,0.92)",backdropFilter:"blur(8px)"}} onClick={() => setSelected(null)}>
+                <div className="w-full max-w-md relative" onClick={e => e.stopPropagation()}>
+                  <button onClick={() => setSelected(null)} className="absolute -top-3 -right-3 z-20 w-10 h-10 rounded-full flex items-center justify-center shadow-xl font-bold text-white transition-all hover:scale-110" style={{background:"linear-gradient(135deg,#dc2626,#1e3a8a)"}}>&#x2715;</button>
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/10">
+                    <img src={selected.src} alt={selected.caption} className="w-full object-contain" style={{maxHeight:"75vh"}} />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <span className="inline-block px-5 py-2 rounded-full text-white text-sm font-semibold" style={{background:"linear-gradient(135deg,rgba(220,38,38,0.8),rgba(30,58,138,0.8))",backdropFilter:"blur(8px)"}}>{selected.caption}</span>
+                  </div>
                 </div>
               </div>
             )}
