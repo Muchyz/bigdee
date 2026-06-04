@@ -31,7 +31,7 @@ export default function DirectorPage() {
   return (
     <div style={{ paddingTop: "80px" }}>
       {/* Dark hero */}
-      <div className="relative overflow-hidden" style={{ minHeight: "320px", background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
+      <div className="relative overflow-hidden" style={{ background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
         <div className="absolute inset-0 opacity-10 pointer-events-none"
           style={{ backgroundImage: "radial-gradient(circle,#ffffff 1px,transparent 1px)", backgroundSize: "32px 32px" }} />
         <div className="relative z-10 max-w-5xl mx-auto px-6 py-8 text-center">
