@@ -343,6 +343,16 @@ function About() {
                   className="w-full h-full object-cover object-center"
                   onError={e => { e.target.style.background="#f1f5f9"; }} />
               </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
+                <img src="/gallery-vip-new.jpg" alt="Suiting Up for Service"
+                  className="w-full h-full object-cover object-top"
+                  onError={e => { e.target.style.background="#f1f5f9"; }} />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
+                <img src="/gallery-briefing.jpg" alt="Pre-Shift Briefing"
+                  className="w-full h-full object-cover object-top"
+                  onError={e => { e.target.style.background="#f1f5f9"; }} />
+              </div>
             </div>
             <div className="mt-4 flex justify-center">
               <button onClick={() => navigate("/gallery")}
