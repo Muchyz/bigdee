@@ -433,18 +433,13 @@ function About() {
 function Director() {
   const navigate = useNavigate();
   return (
-    <section className="py-12 overflow-hidden" style={{ background: "linear-gradient(135deg,#991b1b,#7f1d1d)" }}>
+    <section className="py-12 overflow-hidden" style={{ background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
       <div className="max-w-5xl mx-auto px-6">
         <Reveal>
           <div className="text-center mb-6">
             <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 border border-white/20">
               Director Statement
             </span>
-            <h2 className="text-4xl md:text-5xl text-white">A Message from<br />
-              <span style={{ background: "linear-gradient(135deg,#fca5a5,#93c5fd)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-                Our Founder
-              </span>
-            </h2>
           </div>
         </Reveal>
         <Reveal delay={0.1}>
