@@ -2,7 +2,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 
 const photos = [
-  { src: "/about-main.jpg", caption: "BIG DEE Security Team" },
+  { src: "/gallery-team-portrait.jpg", caption: "BIG DEE Security Team" },
   { src: "/about-action.jpg", caption: "Security Screening" },
   { src: "/about-gate.jpg", caption: "On Duty" },
   { src: "/gallery-squad-new.jpg", caption: "BIG DEE Security Team" },
