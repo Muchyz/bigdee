@@ -31,25 +31,19 @@ export default function DirectorPage() {
   return (
     <div style={{ paddingTop: "80px" }}>
       {/* Dark hero */}
-      <div className="relative overflow-hidden" style={{ minHeight: "320px", background: "linear-gradient(135deg,#991b1b,#7f1d1d)" }}>
+      <div className="relative overflow-hidden" style={{ minHeight: "320px", background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
         <div className="absolute inset-0 opacity-10 pointer-events-none"
           style={{ backgroundImage: "radial-gradient(circle,#ffffff 1px,transparent 1px)", backgroundSize: "32px 32px" }} />
         <div className="relative z-10 max-w-5xl mx-auto px-6 py-8 text-center">
           <span className="inline-block bg-white/10 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 border border-white/20">
             Director Statement
           </span>
-          <h1 className="text-5xl md:text-6xl text-white mb-4" style={{ fontFamily: "'DM Serif Display',serif" }}>
-            A Message from<br />
-            <span style={{ background: "linear-gradient(135deg,#fca5a5,#93c5fd)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              Our Founder
-            </span>
-          </h1>
-          <p className="text-white/50 max-w-xl mx-auto">Duncan O. Ngao — Founder & Director, BIG DEE security solutions limited</p>
+
         </div>
       </div>
 
       {/* Main Statement */}
-      <section className="py-24" style={{ background: "linear-gradient(135deg,#991b1b,#7f1d1d)" }}>
+      <section className="py-24" style={{ background: "linear-gradient(135deg,#1e1b4b,#0f172a)" }}>
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             <Reveal>
