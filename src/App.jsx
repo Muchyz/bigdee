@@ -22,6 +22,7 @@ import ContactPage from "./pages/ContactPage";
 import CareersPage from "./pages/CareersPage";
 import FAQPage from "./pages/FAQPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import GalleryPage from "./pages/GalleryPage";
 
 const FontStyle = () => (
   <style>{`
@@ -1375,6 +1376,7 @@ export default function App() {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
       </Routes>
       <Footer />
       <ScrollToTopButton />
