@@ -123,7 +123,7 @@ export default function ServicesPage() {
       {/* CTA Banner */}
       <section className="py-0">
         <div className="relative overflow-hidden" style={{ height: "280px" }}>
-          <img src="/supervision-truck.jpg" alt="Security patrol"
+          <img src="/supervision-officer.jpg" alt="Security patrol"
             className="w-full h-full object-cover"
             onError={e => { e.target.style.background = "#0f172a"; }} />
           <div className="absolute inset-0 flex items-center justify-center"

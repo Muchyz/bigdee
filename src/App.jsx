@@ -701,10 +701,11 @@ export const services = [
     icon: Users,
     title: "Supervision & Management",
     slug: "supervision-management",
+    photo: "supervision-officer.jpg",
     desc: "To ensure that guards complete their duties accordingly and in accordance with company policy and the clients instructions, BIG DEE Security has Area Managers and Supervisors who will constantly check on the guards.",
     color: "#0891b2", bg: "#ecfeff", gradient: "linear-gradient(135deg,#ecfeff,#cffafe)",
     bullets: ["Dedicated Area Managers","Regular supervisor check-ins","Strict adherence to client instructions","Performance accountability"],
-    photo: "officers-squad.jpg",
+    photo: "supervision-officer.jpg",
     longDesc: "To ensure that all guards complete their duties in accordance with company policy and client instructions, BIG DEE Security deploys dedicated Area Managers and Supervisors who conduct constant, unannounced checks on deployed personnel. This layer of management ensures accountability, consistent performance, and immediate corrective action whenever required. Our supervision structure means clients can trust that their site is never left to chance — every post is monitored and every officer is held to our high standards."
   },
 ];

@@ -15,6 +15,8 @@ const photos = [
   { src: "/contact-officer.jpg", caption: "Professional Service" },
   { src: "/clients-officer.jpg", caption: "Client Protection" },
   { src: "/gallery-briefing.jpg", caption: "Pre-Shift Briefing" },
+  { src: "/supervision-officer.jpg", caption: "Supervision & Management Officer" },
+  { src: "/guarding-dog.jpg", caption: "K9 Unit & Patrol" },
 ];
 
 export default function GalleryPage() {
