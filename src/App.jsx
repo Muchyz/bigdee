@@ -459,13 +459,13 @@ function Director() {
                 "I founded BIG DEE security solutions limited to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
               </p>
               <p className="text-white/70 leading-relaxed">
-                In our Company, we will never compromise on the quality of our service as we keep on innovation and to bring the best one can hope for. That is why we decided to partner with international companies: to equip our clients with the best solutions available. This is also why we are investing significantly to develop the talents of our employees continuously.
+                𝘐𝘯 𝘰𝘶𝘳 𝘊𝘰𝘮𝘱𝘢𝘯𝘺, 𝘸𝘦 𝘸𝘪𝘭𝘭 𝘯𝘦𝘷𝘦𝘳 𝘤𝘰𝘮𝘱𝘳𝘰𝘮𝘪𝘴𝘦 𝘰𝘯 𝘵𝘩𝘦 𝘲𝘶𝘢𝘭𝘪𝘵𝘺 𝘰𝘧 𝘰𝘶𝘳 𝘴𝘦𝘳𝘷𝘪𝘤𝘦 𝘢𝘴 𝘸𝘦 𝘬𝘦𝘦𝘱 𝘰𝘯 𝘪𝘯𝘯𝘰𝘷𝘢𝘵𝘪𝘰𝘯 𝘢𝘯𝘥 𝘵𝘰 𝘣𝘳𝘪𝘯𝘨 𝘵𝘩𝘦 𝘣𝘦𝘴𝘵 𝘰𝘯𝘦 𝘤𝘢𝘯 𝘩𝘰𝘱𝘦 𝘧𝘰𝘳. 𝘛𝘩𝘢𝘵 𝘪𝘴 𝘸𝘩𝘺 𝘸𝘦 𝘥𝘦𝘤𝘪𝘥𝘦𝘥 𝘵𝘰 𝘱𝘢𝘳𝘵𝘯𝘦𝘳 𝘸𝘪𝘵𝘩 𝘪𝘯𝘵𝘦𝘳𝘯𝘢𝘵𝘪𝘰𝘯𝘢𝘭 𝘤𝘰𝘮𝘱𝘢𝘯𝘪𝘦𝘴: 𝘵𝘰 𝘦𝘲𝘶𝘪𝘱 𝘰𝘶𝘳 𝘤𝘭𝘪𝘦𝘯𝘵𝘴 𝘸𝘪𝘵𝘩 𝘵𝘩𝘦 𝘣𝘦𝘴𝘵 𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯𝘴 𝘢𝘷𝘢𝘪𝘭𝘢𝘣𝘭𝘦. 𝘛𝘩𝘪𝘴 𝘪𝘴 𝘢𝘭𝘴𝘰 𝘸𝘩𝘺 𝘸𝘦 𝘢𝘳𝘦 𝘪𝘯𝘷𝘦𝘴𝘵𝘪𝘯𝘨 𝘴𝘪𝘨𝘯𝘪𝘧𝘪𝘤𝘢𝘯𝘵𝘭𝘺 𝘵𝘰 𝘥𝘦𝘷𝘦𝘭𝘰𝘱 𝘵𝘩𝘦 𝘵𝘢𝘭𝘦𝘯𝘵𝘴 𝘰𝘧 𝘰𝘶𝘳 𝘦𝘮𝘱𝘭𝘰𝘺𝘦𝘦𝘴 𝘤𝘰𝘯𝘵𝘪𝘯𝘶𝘰𝘶𝘴𝘭𝘺.
               </p>
               <p className="text-white/70 leading-relaxed">
-                Developing a business responsibly is challenging in a country like Kenya. Fortunately, at BIG DEE security solutions limited, we are all driven by our vision, our mission and our values. Likewise our commitment to uphold compliance and our zero-tolerance approach on corruption signal how we want to operate and conduct our business: ethically and responsibly.
+                𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘪𝘯𝘨 𝘢 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴 𝘳𝘦𝘴𝘱𝘰𝘯𝘴𝘪𝘣𝘭𝘺 𝘪𝘴 𝘤𝘩𝘢𝘭𝘭𝘦𝘯𝘨𝘪𝘯𝘨 𝘪𝘯 𝘢 𝘤𝘰𝘶𝘯𝘵𝘳𝘺 𝘭𝘪𝘬𝘦 𝘒𝘦𝘯𝘺𝘢. 𝘍𝘰𝘳𝘵𝘶𝘯𝘢𝘵𝘦𝘭𝘺, 𝘢𝘵 𝘉𝘐𝘎 𝘋𝘌𝘌 𝘚𝘦𝘤𝘶𝘳𝘪𝘵𝘺 𝘚𝘰𝘭𝘶𝘵𝘪𝘰𝘯𝘴 𝘓𝘪𝘮𝘪𝘵𝘦𝘥, 𝘸𝘦 𝘢𝘳𝘦 𝘢𝘭𝘭 𝘥𝘳𝘪𝘷𝘦𝘯 𝘣𝘺 𝘰𝘶𝘳 𝘷𝘪𝘴𝘪𝘰𝘯, 𝘰𝘶𝘳 𝘮𝘪𝘴𝘴𝘪𝘰𝘯 𝘢𝘯𝘥 𝘰𝘶𝘳 𝘷𝘢𝘭𝘶𝘦𝘴. 𝘓𝘪𝘬𝘦𝘸𝘪𝘴𝘦 𝘰𝘶𝘳 𝘤𝘰𝘮𝘮𝘪𝘵𝘮𝘦𝘯𝘵 𝘵𝘰 𝘶𝘱𝘩𝘰𝘭𝘥 𝘤𝘰𝘮𝘱𝘭𝘪𝘢𝘯𝘤𝘦 𝘢𝘯𝘥 𝘰𝘶𝘳 𝘻𝘦𝘳𝘰-𝘵𝘰𝘭𝘦𝘳𝘢𝘯𝘤𝘦 𝘢𝘱𝘱𝘳𝘰𝘢𝘤𝘩 𝘰𝘯 𝘤𝘰𝘳𝘳𝘶𝘱𝘵𝘪𝘰𝘯 𝘴𝘪𝘨𝘯𝘢𝘭 𝘩𝘰𝘸 𝘸𝘦 𝘸𝘢𝘯𝘵 𝘵𝘰 𝘰𝘱𝘦𝘳𝘢𝘵𝘦 𝘢𝘯𝘥 𝘤𝘰𝘯𝘥𝘶𝘤𝘵 𝘰𝘶𝘳 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴: 𝘦𝘵𝘩𝘪𝘤𝘢𝘭𝘭𝘺 𝘢𝘯𝘥 𝘳𝘦𝘴𝘱𝘰𝘯𝘴𝘪𝘣𝘭𝘺.
               </p>
               <p className="text-white/70 leading-relaxed">
-                BIG DEE security solutions limited. We aim to provide our employees with a respectful workplace. Being transparent and adapted to Good Corporate Governance — with strong commitment of BODs and team members, we are committed to perform better in the future. You can count on us.
+                𝘉𝘐𝘎 𝘋𝘌𝘌 𝘚𝘦𝘤𝘶𝘳𝘪𝘵𝘺 𝘚𝘰𝘭𝘶𝘵𝘪𝘰𝘯𝘴 𝘓𝘪𝘮𝘪𝘵𝘦𝘥. 𝘞𝘦 𝘢𝘪𝘮 𝘵𝘰 𝘱𝘳𝘰𝘷𝘪𝘥𝘦 𝘰𝘶𝘳 𝘦𝘮𝘱𝘭𝘰𝘺𝘦𝘦𝘴 𝘸𝘪𝘵𝘩 𝘢 𝘳𝘦𝘴𝘱𝘦𝘤𝘵𝘧𝘶𝘭 𝘸𝘰𝘳𝘬𝘱𝘭𝘢𝘤𝘦. 𝘉𝘦𝘪𝘯𝘨 𝘵𝘳𝘢𝘯𝘴𝘱𝘢𝘳𝘦𝘯𝘵 𝘢𝘯𝘥 𝘢𝘥𝘢𝘱𝘵𝘦𝘥 𝘵𝘰 𝘎𝘰𝘰𝘥 𝘊𝘰𝘳𝘱𝘰𝘳𝘢𝘵𝘦 𝘎𝘰𝘷𝘦𝘳𝘯𝘢𝘯𝘤𝘦 — 𝘸𝘪𝘵𝘩 𝘴𝘵𝘳𝘰𝘯𝘨 𝘤𝘰𝘮𝘮𝘪𝘵𝘮𝘦𝘯𝘵 𝘰𝘧 𝘉𝘖𝘋𝘴 𝘢𝘯𝘥 𝘵𝘦𝘢𝘮 𝘮𝘦𝘮𝘣𝘦𝘳𝘴, 𝘸𝘦 𝘢𝘳𝘦 𝘤𝘰𝘮𝘮𝘪𝘵𝘵𝘦𝘥 𝘵𝘰 𝘱𝘦𝘳𝘧𝘰𝘳𝘮 𝘣𝘦𝘵𝘵𝘦𝘳 𝘪𝘯 𝘵𝘩𝘦 𝘧𝘶𝘵𝘶𝘳𝘦. 𝘠𝘰𝘶 𝘤𝘢𝘯 𝘤𝘰𝘶𝘯𝘵 𝘰𝘯 𝘶𝘴.
               </p>
               <div className="pt-4 border-t border-white/10 flex items-center justify-between flex-wrap gap-4">
                 <div>
