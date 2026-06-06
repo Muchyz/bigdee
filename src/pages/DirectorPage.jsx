@@ -61,7 +61,7 @@ export default function DirectorPage() {
                 </div>
 
                 <blockquote className="text-white text-2xl leading-relaxed font-medium" style={{ fontFamily: "'DM Serif Display',serif" }}>
-                  "I founded BIG DEE security solutions limited to provide quality services to our clients as we safeguard their homes, work premises and products. We are pleased and honored to contribute and support this journey with our expertise."
+                  "𝘐 𝘧𝘰𝘶𝘯𝘥𝘦𝘥 𝘉𝘐𝘎 𝘋𝘌𝘌 𝘴𝘦𝘤𝘶𝘳𝘪𝘵𝘺 𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯𝘴 𝘭𝘪𝘮𝘪𝘵𝘦𝘥 𝘵𝘰 𝘱𝘳𝘰𝘷𝘪𝘥𝘦 𝘲𝘶𝘢𝘭𝘪𝘵𝘺 𝘴𝘦𝘳𝘷𝘪𝘤𝘦𝘴 𝘵𝘰 𝘰𝘶𝘳 𝘤𝘭𝘪𝘦𝘯𝘵𝘴 𝘢𝘴 𝘸𝘦 𝘴𝘢𝘧𝘦𝘨𝘶𝘢𝘳𝘥 𝘵𝘩𝘦𝘪𝘳 𝘩𝘰𝘮𝘦𝘴, 𝘸𝘰𝘳𝘬 𝘱𝘳𝘦𝘮𝘪𝘴𝘦𝘴 𝘢𝘯𝘥 𝘱𝘳𝘰𝘥𝘶𝘤𝘵𝘴. 𝘞𝘦 𝘢𝘳𝘦 𝘱𝘭𝘦𝘢𝘴𝘦𝘥 𝘢𝘯𝘥 𝘩𝘰𝘯𝘰𝘳𝘦𝘥 𝘵𝘰 𝘤𝘰𝘯𝘵𝘳𝘪𝘣𝘶𝘵𝘦 𝘢𝘯𝘥 𝘴𝘶𝘱𝘱𝘰𝘳𝘵 𝘵𝘩𝘪𝘴 𝘫𝘰𝘶𝘳𝘯𝘦𝘺 𝘸𝘪𝘵𝘩 𝘰𝘶𝘳 𝘦𝘹𝘱𝘦𝘳𝘵𝘪𝘴𝘦."
                 </blockquote>
 
                 <div className="space-y-4 text-white/70 leading-relaxed">
